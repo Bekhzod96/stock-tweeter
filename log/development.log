@@ -10145,3 +10145,1143 @@ puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
 Finished "/cable/" [WebSocket] for ::1 at 2020-08-04 23:03:41 +0300
 Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
 Finished "/cable/" [WebSocket] for ::1 at 2020-08-04 23:03:41 +0300
+Started GET "/cable" for ::1 at 2020-08-06 00:23:27 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:23:28 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (14.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/channels/application_cable/connection.rb:11
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:23:28 +0300
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:23:28 +0300
+Started GET "/cable" for ::1 at 2020-08-06 00:23:44 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:23:44 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/channels/application_cable/connection.rb:11
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:23:44 +0300
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:23:44 +0300
+Started GET "/cable" for ::1 at 2020-08-06 00:24:01 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:24:01 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/channels/application_cable/connection.rb:11
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:24:01 +0300
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:24:01 +0300
+Started GET "/cable" for ::1 at 2020-08-06 00:24:18 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:24:18 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/channels/application_cable/connection.rb:11
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:24:18 +0300
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:24:18 +0300
+Started GET "/cable" for ::1 at 2020-08-06 00:24:36 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:24:36 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/channels/application_cable/connection.rb:11
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:24:36 +0300
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:24:36 +0300
+Started GET "/cable" for ::1 at 2020-08-06 00:24:53 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:24:53 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/channels/application_cable/connection.rb:11
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:24:53 +0300
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:24:53 +0300
+Started GET "/cable" for ::1 at 2020-08-06 00:25:11 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:25:11 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/channels/application_cable/connection.rb:11
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:25:11 +0300
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:25:11 +0300
+Started GET "/cable" for ::1 at 2020-08-06 00:25:29 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:25:29 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/channels/application_cable/connection.rb:11
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:25:29 +0300
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:25:29 +0300
+Started GET "/cable" for ::1 at 2020-08-06 00:25:47 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:25:47 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/channels/application_cable/connection.rb:11
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:25:47 +0300
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:25:47 +0300
+Started GET "/cable" for ::1 at 2020-08-06 00:26:05 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:26:05 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/channels/application_cable/connection.rb:11
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:26:05 +0300
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:26:05 +0300
+Started GET "/cable" for ::1 at 2020-08-06 00:26:23 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:26:23 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/channels/application_cable/connection.rb:11
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:26:23 +0300
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:26:23 +0300
+Started GET "/cable" for ::1 at 2020-08-06 00:26:42 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:26:42 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/channels/application_cable/connection.rb:11
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:26:42 +0300
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:26:42 +0300
+Started GET "/cable" for ::1 at 2020-08-06 00:27:00 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:27:00 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/channels/application_cable/connection.rb:11
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:27:00 +0300
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:27:00 +0300
+Started GET "/cable" for ::1 at 2020-08-06 00:27:19 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:27:19 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/channels/application_cable/connection.rb:11
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:27:19 +0300
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:27:19 +0300
+Started GET "/cable" for ::1 at 2020-08-06 00:27:38 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:27:38 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/channels/application_cable/connection.rb:11
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:27:38 +0300
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:27:38 +0300
+Started GET "/cable" for ::1 at 2020-08-06 00:27:57 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:27:57 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/channels/application_cable/connection.rb:11
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:27:57 +0300
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:27:57 +0300
+Started GET "/cable" for ::1 at 2020-08-06 00:28:16 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:28:16 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/channels/application_cable/connection.rb:11
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:28:16 +0300
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:28:16 +0300
+Started GET "/cable" for ::1 at 2020-08-06 00:28:35 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:28:35 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/channels/application_cable/connection.rb:11
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:28:35 +0300
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:28:35 +0300
+Started GET "/cable" for ::1 at 2020-08-06 00:28:54 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:28:54 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/channels/application_cable/connection.rb:11
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:28:54 +0300
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:28:54 +0300
+Started GET "/cable" for ::1 at 2020-08-06 00:29:14 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:29:14 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/channels/application_cable/connection.rb:11
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:29:14 +0300
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:29:14 +0300
+Started GET "/cable" for ::1 at 2020-08-06 00:29:33 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:29:33 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/channels/application_cable/connection.rb:11
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:29:33 +0300
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:29:33 +0300
+Started GET "/cable" for ::1 at 2020-08-06 00:29:53 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:29:53 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/channels/application_cable/connection.rb:11
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:29:53 +0300
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:29:53 +0300
+Started GET "/cable" for ::1 at 2020-08-06 00:30:12 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:30:12 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/channels/application_cable/connection.rb:11
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:30:12 +0300
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:30:12 +0300
+Started GET "/cable" for ::1 at 2020-08-06 00:30:32 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:30:32 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/channels/application_cable/connection.rb:11
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:30:32 +0300
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:30:32 +0300
+Started GET "/cable" for ::1 at 2020-08-06 00:30:52 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:30:52 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/channels/application_cable/connection.rb:11
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:30:52 +0300
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:30:52 +0300
+Started GET "/cable" for ::1 at 2020-08-06 00:31:12 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:31:12 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/channels/application_cable/connection.rb:11
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:31:12 +0300
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:31:12 +0300
+Started GET "/cable" for ::1 at 2020-08-06 00:31:32 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:31:32 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/channels/application_cable/connection.rb:11
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:31:32 +0300
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:31:32 +0300
+Started GET "/" for ::1 at 2020-08-06 00:31:38 +0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 69ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-08-06 00:31:39 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (2.5ms)
+  Rendered devise/shared/_links.html.erb (3.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (170.1ms)
+DEPRECATION WARNING: autoprefixer-rails was deprected. Use Node.js’s Autoprefixer with PostCSS instead. (called from _app_views_layouts_application_html_erb__136723044694502716_46963047757340 at /home/beka/Documents/Microverse/new-tweeter/app/views/layouts/application.html.erb:7)
+Started GET "/cable" for ::1 at 2020-08-06 00:31:52 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:31:52 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:31:52 +0300
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:31:52 +0300
+DEPRECATION WARNING: autoprefixer-rails was deprected. Use Node.js’s Autoprefixer with PostCSS instead. (called from _app_views_layouts_application_html_erb__136723044694502716_46963047757340 at /home/beka/Documents/Microverse/new-tweeter/app/views/layouts/application.html.erb:7)
+DEPRECATION WARNING: autoprefixer-rails was deprected. Use Node.js’s Autoprefixer with PostCSS instead. (called from _app_views_layouts_application_html_erb__136723044694502716_46963047757340 at /home/beka/Documents/Microverse/new-tweeter/app/views/layouts/application.html.erb:7)
+DEPRECATION WARNING: autoprefixer-rails was deprected. Use Node.js’s Autoprefixer with PostCSS instead. (called from _app_views_layouts_application_html_erb__136723044694502716_46963047757340 at /home/beka/Documents/Microverse/new-tweeter/app/views/layouts/application.html.erb:7)
+DEPRECATION WARNING: autoprefixer-rails was deprected. Use Node.js’s Autoprefixer with PostCSS instead. (called from _app_views_layouts_application_html_erb__136723044694502716_46963047757340 at /home/beka/Documents/Microverse/new-tweeter/app/views/layouts/application.html.erb:7)
+DEPRECATION WARNING: autoprefixer-rails was deprected. Use Node.js’s Autoprefixer with PostCSS instead. (called from _app_views_layouts_application_html_erb__136723044694502716_46963047757340 at /home/beka/Documents/Microverse/new-tweeter/app/views/layouts/application.html.erb:7)
+DEPRECATION WARNING: autoprefixer-rails was deprected. Use Node.js’s Autoprefixer with PostCSS instead. (called from _app_views_layouts_application_html_erb__136723044694502716_46963047757340 at /home/beka/Documents/Microverse/new-tweeter/app/views/layouts/application.html.erb:7)
+DEPRECATION WARNING: autoprefixer-rails was deprected. Use Node.js’s Autoprefixer with PostCSS instead. (called from _app_views_layouts_application_html_erb__136723044694502716_46963047757340 at /home/beka/Documents/Microverse/new-tweeter/app/views/layouts/application.html.erb:7)
+DEPRECATION WARNING: autoprefixer-rails was deprected. Use Node.js’s Autoprefixer with PostCSS instead. (called from _app_views_layouts_application_html_erb__136723044694502716_46963047757340 at /home/beka/Documents/Microverse/new-tweeter/app/views/layouts/application.html.erb:7)
+DEPRECATION WARNING: autoprefixer-rails was deprected. Use Node.js’s Autoprefixer with PostCSS instead. (called from _app_views_layouts_application_html_erb__136723044694502716_46963047757340 at /home/beka/Documents/Microverse/new-tweeter/app/views/layouts/application.html.erb:7)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+Completed 200 OK in 28932ms (Views: 28867.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for ::1 at 2020-08-06 00:32:10 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:32:10 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:32:10 +0300
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:32:10 +0300
+Started GET "/cable" for ::1 at 2020-08-06 00:32:19 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:32:19 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:32:19 +0300
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:32:19 +0300
+Started GET "/cable" for ::1 at 2020-08-06 00:32:32 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:32:32 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:32:32 +0300
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:32:32 +0300
+Started POST "/users/sign_in" for ::1 at 2020-08-06 00:32:35 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2+g/mdfWBo8Jp8cHvbV5bT5C/jR0XqYxc96lYgVvAVCZhsIVdfpjTSYTRm+DrTVlZKz+VOt5LqGnMPoxQaanRg==", "user"=>{"email"=>"bekhzod@mail.ru", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (9.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "bekhzod@mail.ru"], ["LIMIT", 1]]
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 679ms (ActiveRecord: 9.3ms)
+
+
+Started GET "/" for ::1 at 2020-08-06 00:32:35 +0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_tab.html.erb (0.8ms)
+  Rendered layouts/_flash.html.erb (2.1ms)
+  Rendered stocks/_show.html.erb (2.2ms)
+  Rendered tweets/_new_tweet.html.erb (22.3ms)
+  [1m[35m (18.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "tweets" WHERE ("tweets"."author_id" IN (SELECT "users"."id" FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ?) OR "tweets"."author_id" = ?)[0m  [["follower_id", 1], ["author_id", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets" WHERE ("tweets"."author_id" IN (SELECT "users"."id" FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ?) OR "tweets"."author_id" = ?) ORDER BY "tweets"."updated_at" DESC[0m  [["follower_id", 1], ["author_id", 1]]
+  ↳ app/views/home/index.html.erb:21
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  ↳ app/views/home/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (56.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? AND "active_storage_attachments"."record_id" = ?[0m  [["record_type", "User"], ["name", "photo"], ["record_id", 1]]
+  ↳ app/views/home/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (2.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? AND "active_storage_attachments"."record_id" = ?[0m  [["record_type", "User"], ["name", "cover_image"], ["record_id", 1]]
+  ↳ app/views/home/index.html.erb:21
+  [1m[36mLike Load (73.0ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."tweet_id" = ?[0m  [["tweet_id", 1]]
+  ↳ app/views/home/index.html.erb:21
+  [1m[36mComment Load (29.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."tweet_id" = ?[0m  [["tweet_id", 1]]
+  ↳ app/views/home/index.html.erb:21
+  [1m[36mActiveStorage::Blob Load (26.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tweets/_tweet.html.erb:3
+  [1m[36mUser Exists (1.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."tweet_id" = ? AND "users"."id" = ? LIMIT ?[0m  [["tweet_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/application_helper.rb:7
+  Rendered likes/_unlike_button.html.erb (1.2ms)
+  Rendered collection of tweets/_tweet.html.erb [1 times] (431.9ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" != ? AND "users"."id" NOT IN (SELECT "users"."id" FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ?)[0m  [["id", 1], ["follower_id", 1]]
+  ↳ app/views/home/index.html.erb:33
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/_user.html.erb:3
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/_user.html.erb:3
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ? AND "users"."id" = ? LIMIT ?[0m  [["follower_id", 1], ["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/application_helper.rb:3
+  Rendered users/_follow.html.erb (2.2ms)
+  Rendered users/_user.html.erb (11.9ms)
+  Rendered home/index.html.erb within layouts/application (1253.4ms)
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:4
+  [1m[36mCACHE ActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:4
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ?[0m  [["follower_id", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:15
+  [1m[35m (10.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."follower_id" WHERE "followings"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:23
+  [1m[36mUserRoom Load (0.3ms)[0m  [1m[34mSELECT "user_rooms".* FROM "user_rooms" WHERE "user_rooms"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/helpers/application_helper.rb:33
+  Rendered layouts/_sidenav.html.erb (58.6ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."follower_id" WHERE "followings"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:23
+  Rendered layouts/_sidenav.html.erb (4.0ms)
+  Rendered layouts/_navbar.html.erb (5.3ms)
+Completed 200 OK in 2058ms (Views: 1256.4ms | ActiveRecord: 239.8ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5c18449474c555c27b5b21512e921041e4dc24b1/4K%20NO%20G159.png" for ::1 at 2020-08-06 00:32:38 +0300
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5c7e8c4e01c52b9e600895e83510fe5fa199ba21/pic.jpg" for ::1 at 2020-08-06 00:32:38 +0300
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5c7e8c4e01c52b9e600895e83510fe5fa199ba21", "filename"=>"pic"}
+Processing by ActiveStorage::BlobsController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5c18449474c555c27b5b21512e921041e4dc24b1", "filename"=>"4K NO G159"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (2.3ms) [0m[34mGenerated URL for file at key: QFDwNPvq9G7EEWcWGkVx6hFh (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRVVVpFZDA1UWRuRTVSemRGUlZkalYwZHJWbmcyYUVab0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTVhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGljR2xqTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25jR2xqTG1wd1p3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEMmx0WVdkbEwycHdaV2NHT3daVSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6Mzc6MzguNzExWiIsInB1ciI6ImJsb2Jfa2V5In19--c7ae0ba0b7ff65a777306071c9ceae808711ca98/pic.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22pic.jpg%22%3B+filename%2A%3DUTF-8%27%27pic.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRVVVpFZDA1UWRuRTVSemRGUlZkalYwZHJWbmcyYUVab0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTVhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGljR2xqTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25jR2xqTG1wd1p3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEMmx0WVdkbEwycHdaV2NHT3daVSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6Mzc6MzguNzExWiIsInB1ciI6ImJsb2Jfa2V5In19--c7ae0ba0b7ff65a777306071c9ceae808711ca98/pic.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22pic.jpg%22%3B+filename%2A%3DUTF-8%27%27pic.jpg
+Completed 302 Found in 57ms (ActiveRecord: 0.3ms)
+
+
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (0.6ms) [0m[34mGenerated URL for file at key: 3xASYdFM7msLYnrBsFbRS9Ez (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNM2hCVTFsa1JrMDNiWE5NV1c1eVFuTkdZbEpUT1VWNkJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSkxhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlORXNnVGs4Z1J6RTFPUzV3Ym1jaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkp6UkxKVEl3VGs4bE1qQkhNVFU1TG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6Mzc6MzguNzIxWiIsInB1ciI6ImJsb2Jfa2V5In19--f82b9c513bf304aabd495883c1e7e792a77ccfbe/4K%20NO%20G159.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%224K+NO+G159.png%22%3B+filename%2A%3DUTF-8%27%274K%2520NO%2520G159.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNM2hCVTFsa1JrMDNiWE5NV1c1eVFuTkdZbEpUT1VWNkJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSkxhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlORXNnVGs4Z1J6RTFPUzV3Ym1jaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkp6UkxKVEl3VGs4bE1qQkhNVFU1TG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6Mzc6MzguNzIxWiIsInB1ciI6ImJsb2Jfa2V5In19--f82b9c513bf304aabd495883c1e7e792a77ccfbe/4K%20NO%20G159.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%224K+NO+G159.png%22%3B+filename%2A%3DUTF-8%27%274K%2520NO%2520G159.png
+Completed 302 Found in 56ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/cable" for ::1 at 2020-08-06 00:32:38 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:32:38 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/channels/application_cable/connection.rb:11
+Registered connection (Z2lkOi8vc3RvY2stdHdpdHRlci9Vc2VyLzE)
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNM2hCVTFsa1JrMDNiWE5NV1c1eVFuTkdZbEpUT1VWNkJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSkxhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlORXNnVGs4Z1J6RTFPUzV3Ym1jaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkp6UkxKVEl3VGs4bE1qQkhNVFU1TG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6Mzc6MzguNzIxWiIsInB1ciI6ImJsb2Jfa2V5In19--f82b9c513bf304aabd495883c1e7e792a77ccfbe/4K%20NO%20G159.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%224K+NO+G159.png%22%3B+filename%2A%3DUTF-8%27%274K%2520NO%2520G159.png" for ::1 at 2020-08-06 00:32:39 +0300
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRVVVpFZDA1UWRuRTVSemRGUlZkalYwZHJWbmcyYUVab0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTVhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGljR2xqTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25jR2xqTG1wd1p3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEMmx0WVdkbEwycHdaV2NHT3daVSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6Mzc6MzguNzExWiIsInB1ciI6ImJsb2Jfa2V5In19--c7ae0ba0b7ff65a777306071c9ceae808711ca98/pic.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22pic.jpg%22%3B+filename%2A%3DUTF-8%27%27pic.jpg" for ::1 at 2020-08-06 00:32:39 +0300
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"4K NO G159.png\"; filename*=UTF-8''4K%20NO%20G159.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNM2hCVTFsa1JrMDNiWE5NV1c1eVFuTkdZbEpUT1VWNkJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSkxhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlORXNnVGs4Z1J6RTFPUzV3Ym1jaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkp6UkxKVEl3VGs4bE1qQkhNVFU1TG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6Mzc6MzguNzIxWiIsInB1ciI6ImJsb2Jfa2V5In19--f82b9c513bf304aabd495883c1e7e792a77ccfbe", "filename"=>"4K NO G159"}
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"pic.jpg\"; filename*=UTF-8''pic.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRVVVpFZDA1UWRuRTVSemRGUlZkalYwZHJWbmcyYUVab0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTVhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGljR2xqTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25jR2xqTG1wd1p3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEMmx0WVdkbEwycHdaV2NHT3daVSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6Mzc6MzguNzExWiIsInB1ciI6ImJsb2Jfa2V5In19--c7ae0ba0b7ff65a777306071c9ceae808711ca98", "filename"=>"pic"}
+Completed 200 OK in 51ms (ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 45ms (ActiveRecord: 0.0ms)
+
+
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" INNER JOIN "user_rooms" ON "rooms"."id" = "user_rooms"."room_id" WHERE "user_rooms"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/channels/chat_channel.rb:7
+ChatChannel is transmitting the subscription confirmation
+ChatChannel is streaming from chat:1
+Started GET "/search_stock?utf8=%E2%9C%93&stock=&button=" for ::1 at 2020-08-06 00:32:45 +0300
+Processing by StocksController#search as JS
+  Parameters: {"utf8"=>"✓", "stock"=>"", "button"=>""}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendered layouts/_messages.html.erb (1.1ms)
+  Rendered layouts/_flash.html.erb (0.7ms)
+  Rendered stocks/_stock.html.erb (7.7ms)
+  Rendered stocks/_stock.js.erb (10.2ms)
+Completed 200 OK in 61ms (Views: 50.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/search_stock?utf8=%E2%9C%93&stock=AMZN&button=" for ::1 at 2020-08-06 00:32:49 +0300
+Processing by StocksController#search as JS
+  Parameters: {"utf8"=>"✓", "stock"=>"AMZN", "button"=>""}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.6ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/stocks_controller.rb:25:in `new_lookup'
+app/controllers/stocks_controller.rb:4:in `search'
+Started GET "/search_stock?utf8=%E2%9C%93&stock=AMZN&button=" for ::1 at 2020-08-06 00:32:59 +0300
+Processing by StocksController#search as JS
+  Parameters: {"utf8"=>"✓", "stock"=>"AMZN", "button"=>""}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/stocks_controller.rb:25:in `new_lookup'
+app/controllers/stocks_controller.rb:4:in `search'
+Started GET "/search_stock?utf8=%E2%9C%93&stock=AMZN&button=" for ::1 at 2020-08-06 00:33:01 +0300
+Processing by StocksController#search as JS
+  Parameters: {"utf8"=>"✓", "stock"=>"AMZN", "button"=>""}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.5ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/stocks_controller.rb:25:in `new_lookup'
+app/controllers/stocks_controller.rb:4:in `search'
+Started GET "/cable" for ::1 at 2020-08-06 00:34:44 +0300
+  [1m[35m (15.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:34:44 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (26.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/channels/application_cable/connection.rb:11
+Registered connection (Z2lkOi8vc3RvY2stdHdpdHRlci9Vc2VyLzE)
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" INNER JOIN "user_rooms" ON "rooms"."id" = "user_rooms"."room_id" WHERE "user_rooms"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/channels/chat_channel.rb:7
+ChatChannel is transmitting the subscription confirmation
+ChatChannel is streaming from chat:1
+Started GET "/" for ::1 at 2020-08-06 00:35:32 +0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_tab.html.erb (0.3ms)
+  Rendered layouts/_flash.html.erb (1.5ms)
+  Rendered stocks/_show.html.erb (3.7ms)
+  Rendered tweets/_new_tweet.html.erb (11.2ms)
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "tweets" WHERE ("tweets"."author_id" IN (SELECT "users"."id" FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ?) OR "tweets"."author_id" = ?)[0m  [["follower_id", 1], ["author_id", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets" WHERE ("tweets"."author_id" IN (SELECT "users"."id" FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ?) OR "tweets"."author_id" = ?) ORDER BY "tweets"."updated_at" DESC[0m  [["follower_id", 1], ["author_id", 1]]
+  ↳ app/views/home/index.html.erb:21
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  ↳ app/views/home/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? AND "active_storage_attachments"."record_id" = ?[0m  [["record_type", "User"], ["name", "photo"], ["record_id", 1]]
+  ↳ app/views/home/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? AND "active_storage_attachments"."record_id" = ?[0m  [["record_type", "User"], ["name", "cover_image"], ["record_id", 1]]
+  ↳ app/views/home/index.html.erb:21
+  [1m[36mLike Load (1.0ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."tweet_id" = ?[0m  [["tweet_id", 1]]
+  ↳ app/views/home/index.html.erb:21
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."tweet_id" = ?[0m  [["tweet_id", 1]]
+  ↳ app/views/home/index.html.erb:21
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tweets/_tweet.html.erb:3
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."tweet_id" = ? AND "users"."id" = ? LIMIT ?[0m  [["tweet_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/application_helper.rb:7
+  Rendered likes/_unlike_button.html.erb (0.7ms)
+  Rendered collection of tweets/_tweet.html.erb [1 times] (65.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" != ? AND "users"."id" NOT IN (SELECT "users"."id" FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ?)[0m  [["id", 1], ["follower_id", 1]]
+  ↳ app/views/home/index.html.erb:33
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/_user.html.erb:3
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/_user.html.erb:3
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ? AND "users"."id" = ? LIMIT ?[0m  [["follower_id", 1], ["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/application_helper.rb:3
+  Rendered users/_follow.html.erb (4.5ms)
+  Rendered users/_user.html.erb (25.0ms)
+  Rendered home/index.html.erb within layouts/application (199.2ms)
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:4
+  [1m[36mCACHE ActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ?[0m  [["follower_id", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:15
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."follower_id" WHERE "followings"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:23
+  [1m[36mUserRoom Load (0.3ms)[0m  [1m[34mSELECT "user_rooms".* FROM "user_rooms" WHERE "user_rooms"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/helpers/application_helper.rb:33
+  Rendered layouts/_sidenav.html.erb (15.5ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."follower_id" WHERE "followings"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:23
+  Rendered layouts/_sidenav.html.erb (2.1ms)
+  Rendered layouts/_navbar.html.erb (3.0ms)
+Completed 200 OK in 762ms (Views: 711.8ms | ActiveRecord: 14.3ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:35:32 +0300
+ChatChannel stopped streaming from chat:1
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNM2hCVTFsa1JrMDNiWE5NV1c1eVFuTkdZbEpUT1VWNkJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSkxhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlORXNnVGs4Z1J6RTFPUzV3Ym1jaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkp6UkxKVEl3VGs4bE1qQkhNVFU1TG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6Mzc6MzguNzIxWiIsInB1ciI6ImJsb2Jfa2V5In19--f82b9c513bf304aabd495883c1e7e792a77ccfbe/4K%20NO%20G159.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%224K+NO+G159.png%22%3B+filename%2A%3DUTF-8%27%274K%2520NO%2520G159.png" for ::1 at 2020-08-06 00:35:33 +0300
+Processing by ActiveStorage::DiskController#show as PNG
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRVVVpFZDA1UWRuRTVSemRGUlZkalYwZHJWbmcyYUVab0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTVhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGljR2xqTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25jR2xqTG1wd1p3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEMmx0WVdkbEwycHdaV2NHT3daVSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6Mzc6MzguNzExWiIsInB1ciI6ImJsb2Jfa2V5In19--c7ae0ba0b7ff65a777306071c9ceae808711ca98/pic.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22pic.jpg%22%3B+filename%2A%3DUTF-8%27%27pic.jpg" for ::1 at 2020-08-06 00:35:33 +0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"pic.jpg\"; filename*=UTF-8''pic.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRVVVpFZDA1UWRuRTVSemRGUlZkalYwZHJWbmcyYUVab0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTVhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGljR2xqTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25jR2xqTG1wd1p3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEMmx0WVdkbEwycHdaV2NHT3daVSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6Mzc6MzguNzExWiIsInB1ciI6ImJsb2Jfa2V5In19--c7ae0ba0b7ff65a777306071c9ceae808711ca98", "filename"=>"pic"}
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"4K NO G159.png\"; filename*=UTF-8''4K%20NO%20G159.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNM2hCVTFsa1JrMDNiWE5NV1c1eVFuTkdZbEpUT1VWNkJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSkxhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlORXNnVGs4Z1J6RTFPUzV3Ym1jaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkp6UkxKVEl3VGs4bE1qQkhNVFU1TG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6Mzc6MzguNzIxWiIsInB1ciI6ImJsb2Jfa2V5In19--f82b9c513bf304aabd495883c1e7e792a77ccfbe", "filename"=>"4K NO G159"}
+Completed 304 Not Modified in 2ms (ActiveRecord: 0.0ms)
+
+
+Completed 304 Not Modified in 8ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for ::1 at 2020-08-06 00:35:33 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:35:33 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/channels/application_cable/connection.rb:11
+Registered connection (Z2lkOi8vc3RvY2stdHdpdHRlci9Vc2VyLzE)
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" INNER JOIN "user_rooms" ON "rooms"."id" = "user_rooms"."room_id" WHERE "user_rooms"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/channels/chat_channel.rb:7
+ChatChannel is transmitting the subscription confirmation
+ChatChannel is streaming from chat:1
+Started GET "/search_stock?utf8=%E2%9C%93&stock=AMZN%20&button=" for ::1 at 2020-08-06 00:35:38 +0300
+Processing by StocksController#search as JS
+  Parameters: {"utf8"=>"✓", "stock"=>"AMZN ", "button"=>""}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/stocks_controller.rb:25:in `new_lookup'
+app/controllers/stocks_controller.rb:4:in `search'
+Started GET "/cable" for ::1 at 2020-08-06 00:37:46 +0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:37:46 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/channels/application_cable/connection.rb:11
+Registered connection (Z2lkOi8vc3RvY2stdHdpdHRlci9Vc2VyLzE)
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" INNER JOIN "user_rooms" ON "rooms"."id" = "user_rooms"."room_id" WHERE "user_rooms"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/channels/chat_channel.rb:7
+ChatChannel is transmitting the subscription confirmation
+ChatChannel is streaming from chat:1
+Started GET "/" for ::1 at 2020-08-06 00:37:53 +0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_tab.html.erb (0.3ms)
+  Rendered layouts/_flash.html.erb (0.5ms)
+  Rendered stocks/_show.html.erb (2.3ms)
+  Rendered tweets/_new_tweet.html.erb (11.5ms)
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "tweets" WHERE ("tweets"."author_id" IN (SELECT "users"."id" FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ?) OR "tweets"."author_id" = ?)[0m  [["follower_id", 1], ["author_id", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mTweet Load (0.7ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets" WHERE ("tweets"."author_id" IN (SELECT "users"."id" FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ?) OR "tweets"."author_id" = ?) ORDER BY "tweets"."updated_at" DESC[0m  [["follower_id", 1], ["author_id", 1]]
+  ↳ app/views/home/index.html.erb:21
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  ↳ app/views/home/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? AND "active_storage_attachments"."record_id" = ?[0m  [["record_type", "User"], ["name", "photo"], ["record_id", 1]]
+  ↳ app/views/home/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? AND "active_storage_attachments"."record_id" = ?[0m  [["record_type", "User"], ["name", "cover_image"], ["record_id", 1]]
+  ↳ app/views/home/index.html.erb:21
+  [1m[36mLike Load (0.2ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."tweet_id" = ?[0m  [["tweet_id", 1]]
+  ↳ app/views/home/index.html.erb:21
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."tweet_id" = ?[0m  [["tweet_id", 1]]
+  ↳ app/views/home/index.html.erb:21
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tweets/_tweet.html.erb:3
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."tweet_id" = ? AND "users"."id" = ? LIMIT ?[0m  [["tweet_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/application_helper.rb:7
+  Rendered likes/_unlike_button.html.erb (1.2ms)
+  Rendered collection of tweets/_tweet.html.erb [1 times] (63.4ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" != ? AND "users"."id" NOT IN (SELECT "users"."id" FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ?)[0m  [["id", 1], ["follower_id", 1]]
+  ↳ app/views/home/index.html.erb:33
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/_user.html.erb:3
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/_user.html.erb:3
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ? AND "users"."id" = ? LIMIT ?[0m  [["follower_id", 1], ["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/application_helper.rb:3
+  Rendered users/_follow.html.erb (1.4ms)
+  Rendered users/_user.html.erb (13.0ms)
+  Rendered home/index.html.erb within layouts/application (184.7ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:4
+  [1m[36mCACHE ActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:4
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ?[0m  [["follower_id", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:15
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."follower_id" WHERE "followings"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:23
+  [1m[36mUserRoom Load (0.6ms)[0m  [1m[34mSELECT "user_rooms".* FROM "user_rooms" WHERE "user_rooms"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/helpers/application_helper.rb:33
+  Rendered layouts/_sidenav.html.erb (44.5ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."follower_id" WHERE "followings"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:23
+  Rendered layouts/_sidenav.html.erb (3.0ms)
+  Rendered layouts/_navbar.html.erb (4.5ms)
+Completed 200 OK in 1702ms (Views: 1647.5ms | ActiveRecord: 13.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:37:55 +0300
+ChatChannel stopped streaming from chat:1
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5c7e8c4e01c52b9e600895e83510fe5fa199ba21/pic.jpg" for ::1 at 2020-08-06 00:37:55 +0300
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5c7e8c4e01c52b9e600895e83510fe5fa199ba21", "filename"=>"pic"}
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (1.6ms) [0m[34mGenerated URL for file at key: QFDwNPvq9G7EEWcWGkVx6hFh (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRVVVpFZDA1UWRuRTVSemRGUlZkalYwZHJWbmcyYUVab0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTVhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGljR2xqTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25jR2xqTG1wd1p3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEMmx0WVdkbEwycHdaV2NHT3daVSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6NDI6NTUuOTY0WiIsInB1ciI6ImJsb2Jfa2V5In19--86970a0f37cee09cf1e247a50d5df6467968b456/pic.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22pic.jpg%22%3B+filename%2A%3DUTF-8%27%27pic.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRVVVpFZDA1UWRuRTVSemRGUlZkalYwZHJWbmcyYUVab0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTVhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGljR2xqTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25jR2xqTG1wd1p3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEMmx0WVdkbEwycHdaV2NHT3daVSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6NDI6NTUuOTY0WiIsInB1ciI6ImJsb2Jfa2V5In19--86970a0f37cee09cf1e247a50d5df6467968b456/pic.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22pic.jpg%22%3B+filename%2A%3DUTF-8%27%27pic.jpg
+Completed 302 Found in 8ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5c18449474c555c27b5b21512e921041e4dc24b1/4K%20NO%20G159.png" for ::1 at 2020-08-06 00:37:55 +0300
+Processing by ActiveStorage::BlobsController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5c18449474c555c27b5b21512e921041e4dc24b1", "filename"=>"4K NO G159"}
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (1.0ms) [0m[34mGenerated URL for file at key: 3xASYdFM7msLYnrBsFbRS9Ez (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNM2hCVTFsa1JrMDNiWE5NV1c1eVFuTkdZbEpUT1VWNkJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSkxhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlORXNnVGs4Z1J6RTFPUzV3Ym1jaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkp6UkxKVEl3VGs4bE1qQkhNVFU1TG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6NDI6NTUuOTc3WiIsInB1ciI6ImJsb2Jfa2V5In19--570cf6ab4950d8fadef1cb8c599f5d27de303d7f/4K%20NO%20G159.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%224K+NO+G159.png%22%3B+filename%2A%3DUTF-8%27%274K%2520NO%2520G159.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNM2hCVTFsa1JrMDNiWE5NV1c1eVFuTkdZbEpUT1VWNkJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSkxhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlORXNnVGs4Z1J6RTFPUzV3Ym1jaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkp6UkxKVEl3VGs4bE1qQkhNVFU1TG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6NDI6NTUuOTc3WiIsInB1ciI6ImJsb2Jfa2V5In19--570cf6ab4950d8fadef1cb8c599f5d27de303d7f/4K%20NO%20G159.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%224K+NO+G159.png%22%3B+filename%2A%3DUTF-8%27%274K%2520NO%2520G159.png
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/cable" for ::1 at 2020-08-06 00:37:56 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:37:56 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/channels/application_cable/connection.rb:11
+Registered connection (Z2lkOi8vc3RvY2stdHdpdHRlci9Vc2VyLzE)
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRVVVpFZDA1UWRuRTVSemRGUlZkalYwZHJWbmcyYUVab0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTVhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGljR2xqTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25jR2xqTG1wd1p3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEMmx0WVdkbEwycHdaV2NHT3daVSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6NDI6NTUuOTY0WiIsInB1ciI6ImJsb2Jfa2V5In19--86970a0f37cee09cf1e247a50d5df6467968b456/pic.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22pic.jpg%22%3B+filename%2A%3DUTF-8%27%27pic.jpg" for ::1 at 2020-08-06 00:37:56 +0300
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNM2hCVTFsa1JrMDNiWE5NV1c1eVFuTkdZbEpUT1VWNkJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSkxhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlORXNnVGs4Z1J6RTFPUzV3Ym1jaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkp6UkxKVEl3VGs4bE1qQkhNVFU1TG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6NDI6NTUuOTc3WiIsInB1ciI6ImJsb2Jfa2V5In19--570cf6ab4950d8fadef1cb8c599f5d27de303d7f/4K%20NO%20G159.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%224K+NO+G159.png%22%3B+filename%2A%3DUTF-8%27%274K%2520NO%2520G159.png" for ::1 at 2020-08-06 00:37:56 +0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"pic.jpg\"; filename*=UTF-8''pic.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRVVVpFZDA1UWRuRTVSemRGUlZkalYwZHJWbmcyYUVab0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTVhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGljR2xqTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25jR2xqTG1wd1p3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEMmx0WVdkbEwycHdaV2NHT3daVSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6NDI6NTUuOTY0WiIsInB1ciI6ImJsb2Jfa2V5In19--86970a0f37cee09cf1e247a50d5df6467968b456", "filename"=>"pic"}
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"4K NO G159.png\"; filename*=UTF-8''4K%20NO%20G159.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNM2hCVTFsa1JrMDNiWE5NV1c1eVFuTkdZbEpUT1VWNkJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSkxhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlORXNnVGs4Z1J6RTFPUzV3Ym1jaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkp6UkxKVEl3VGs4bE1qQkhNVFU1TG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6NDI6NTUuOTc3WiIsInB1ciI6ImJsb2Jfa2V5In19--570cf6ab4950d8fadef1cb8c599f5d27de303d7f", "filename"=>"4K NO G159"}
+Completed 200 OK in 11ms (ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 36ms (ActiveRecord: 0.0ms)
+
+
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" INNER JOIN "user_rooms" ON "rooms"."id" = "user_rooms"."room_id" WHERE "user_rooms"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/channels/chat_channel.rb:7
+ChatChannel is transmitting the subscription confirmation
+ChatChannel is streaming from chat:1
+Started GET "/search_stock?utf8=%E2%9C%93&stock=sfdsf&button=" for ::1 at 2020-08-06 00:37:59 +0300
+Processing by StocksController#search as JS
+  Parameters: {"utf8"=>"✓", "stock"=>"sfdsf", "button"=>""}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendered layouts/_messages.html.erb (1.3ms)
+  Rendered layouts/_flash.html.erb (1.9ms)
+  Rendered stocks/_stock.html.erb (13.2ms)
+  Rendered stocks/_stock.js.erb (18.2ms)
+Completed 200 OK in 4798ms (Views: 22.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/search_stock?utf8=%E2%9C%93&stock=AMZN&button=" for ::1 at 2020-08-06 00:38:09 +0300
+Processing by StocksController#search as JS
+  Parameters: {"utf8"=>"✓", "stock"=>"AMZN", "button"=>""}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendered layouts/_messages.html.erb (1.6ms)
+  Rendered layouts/_flash.html.erb (4.0ms)
+  Rendered stocks/_stock.html.erb (17.7ms)
+  Rendered stocks/_stock.js.erb (23.5ms)
+Completed 200 OK in 3523ms (Views: 27.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/2" for ::1 at 2020-08-06 00:38:17 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "User"], ["name", "cover_image"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:4
+  Rendered home/_tab.html.erb (0.8ms)
+  Rendered layouts/_flash.html.erb (0.4ms)
+  Rendered tweets/_new_tweet.html.erb (1.3ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tweets" WHERE "tweets"."author_id" = ?[0m  [["author_id", 2]]
+  ↳ app/views/users/show.html.erb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ? AND "users"."id" = ? LIMIT ?[0m  [["follower_id", 1], ["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/application_helper.rb:3
+  Rendered users/_follow.html.erb (2.6ms)
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:43
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:43
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ?[0m  [["follower_id", 2]]
+  ↳ app/views/users/show.html.erb:60
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."follower_id" WHERE "followings"."followed_id" = ?[0m  [["followed_id", 2]]
+  ↳ app/views/users/show.html.erb:64
+  Rendered users/show.html.erb within layouts/application (37.4ms)
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:4
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ?[0m  [["follower_id", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."follower_id" WHERE "followings"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:23
+  [1m[36mUserRoom Load (0.2ms)[0m  [1m[34mSELECT "user_rooms".* FROM "user_rooms" WHERE "user_rooms"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/helpers/application_helper.rb:33
+  Rendered layouts/_sidenav.html.erb (8.1ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."follower_id" WHERE "followings"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:23
+  Rendered layouts/_sidenav.html.erb (1.9ms)
+  Rendered layouts/_navbar.html.erb (3.1ms)
+Completed 200 OK in 188ms (Views: 156.3ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/users/1/followers" for ::1 at 2020-08-06 00:38:22 +0300
+Processing by UsersController#followers as JS
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering users/followers.js.erb
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."follower_id" WHERE "followings"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/users/_user_followers.html.erb:8
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."follower_id" WHERE "followings"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/users/_user_followers.html.erb:11
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/_user.html.erb:3
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/_user.html.erb:3
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ? AND "users"."id" = ? LIMIT ?[0m  [["follower_id", 1], ["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/application_helper.rb:3
+  Rendered users/_user.html.erb (10.5ms)
+  Rendered users/_user_followers.html.erb (25.4ms)
+  Rendered users/followers.js.erb (29.5ms)
+Completed 200 OK in 72ms (Views: 56.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/rooms" for ::1 at 2020-08-06 00:38:25 +0300
+Processing by RoomsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering rooms/index.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (0.8ms)
+  [1m[36mRoom Load (0.4ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" INNER JOIN "user_rooms" ON "rooms"."id" = "user_rooms"."room_id" WHERE "user_rooms"."user_id" = ? ORDER BY "rooms"."last_message" DESC[0m  [["user_id", 1]]
+  ↳ app/views/rooms/index.html.erb:22
+  [1m[36mUserRoom Load (0.3ms)[0m  [1m[34mSELECT "user_rooms".* FROM "user_rooms" WHERE "user_rooms"."room_id" = ?[0m  [["room_id", 1]]
+  ↳ app/views/rooms/index.html.erb:22
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IN (?, ?)[0m  [["id", 1], ["id", 2]]
+  ↳ app/views/rooms/index.html.erb:22
+  Rendered rooms/index.html.erb within layouts/application (40.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:4
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ?[0m  [["follower_id", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:15
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."follower_id" WHERE "followings"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:23
+  [1m[36mUserRoom Load (0.1ms)[0m  [1m[34mSELECT "user_rooms".* FROM "user_rooms" WHERE "user_rooms"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/helpers/application_helper.rb:33
+  Rendered layouts/_sidenav.html.erb (9.3ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."follower_id" WHERE "followings"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:23
+  Rendered layouts/_sidenav.html.erb (2.3ms)
+  Rendered layouts/_navbar.html.erb (3.6ms)
+Completed 200 OK in 144ms (Views: 134.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/rooms" for ::1 at 2020-08-06 00:38:33 +0300
+Processing by RoomsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering rooms/index.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (0.4ms)
+  [1m[36mRoom Load (0.1ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" INNER JOIN "user_rooms" ON "rooms"."id" = "user_rooms"."room_id" WHERE "user_rooms"."user_id" = ? ORDER BY "rooms"."last_message" DESC[0m  [["user_id", 1]]
+  ↳ app/views/rooms/index.html.erb:22
+  [1m[36mUserRoom Load (0.1ms)[0m  [1m[34mSELECT "user_rooms".* FROM "user_rooms" WHERE "user_rooms"."room_id" = ?[0m  [["room_id", 1]]
+  ↳ app/views/rooms/index.html.erb:22
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IN (?, ?)[0m  [["id", 1], ["id", 2]]
+  ↳ app/views/rooms/index.html.erb:22
+  Rendered rooms/index.html.erb within layouts/application (15.0ms)
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:4
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ?[0m  [["follower_id", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:15
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."follower_id" WHERE "followings"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:23
+  [1m[36mUserRoom Load (0.1ms)[0m  [1m[34mSELECT "user_rooms".* FROM "user_rooms" WHERE "user_rooms"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/helpers/application_helper.rb:33
+  Rendered layouts/_sidenav.html.erb (9.2ms)
+  [1m[35mCACHE  (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."follower_id" WHERE "followings"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:23
+  Rendered layouts/_sidenav.html.erb (4.9ms)
+  Rendered layouts/_navbar.html.erb (6.8ms)
+Completed 200 OK in 178ms (Views: 171.8ms | ActiveRecord: 2.4ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:38:33 +0300
+ChatChannel stopped streaming from chat:1
+Started GET "/cable" for ::1 at 2020-08-06 00:38:33 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:38:33 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/channels/application_cable/connection.rb:11
+Registered connection (Z2lkOi8vc3RvY2stdHdpdHRlci9Vc2VyLzE)
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRVVVpFZDA1UWRuRTVSemRGUlZkalYwZHJWbmcyYUVab0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTVhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGljR2xqTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25jR2xqTG1wd1p3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEMmx0WVdkbEwycHdaV2NHT3daVSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6NDI6NTUuOTY0WiIsInB1ciI6ImJsb2Jfa2V5In19--86970a0f37cee09cf1e247a50d5df6467968b456/pic.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22pic.jpg%22%3B+filename%2A%3DUTF-8%27%27pic.jpg" for ::1 at 2020-08-06 00:38:33 +0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"pic.jpg\"; filename*=UTF-8''pic.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRVVVpFZDA1UWRuRTVSemRGUlZkalYwZHJWbmcyYUVab0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTVhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGljR2xqTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25jR2xqTG1wd1p3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEMmx0WVdkbEwycHdaV2NHT3daVSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6NDI6NTUuOTY0WiIsInB1ciI6ImJsb2Jfa2V5In19--86970a0f37cee09cf1e247a50d5df6467968b456", "filename"=>"pic"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms)
+
+
+  [1m[36mRoom Load (0.3ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" INNER JOIN "user_rooms" ON "rooms"."id" = "user_rooms"."room_id" WHERE "user_rooms"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/channels/chat_channel.rb:7
+ChatChannel is transmitting the subscription confirmation
+ChatChannel is streaming from chat:1
+Started GET "/rooms/1" for ::1 at 2020-08-06 00:38:36 +0300
+Processing by RoomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/rooms_controller.rb:17
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" WHERE "messages"."room_id" = ?[0m  [["room_id", 1]]
+  ↳ app/controllers/rooms_controller.rb:17
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "user_rooms" ON "users"."id" = "user_rooms"."user_id" WHERE "user_rooms"."room_id" = ? AND "users"."id" = ? LIMIT ?[0m  [["room_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/rooms_controller.rb:21
+  Rendering rooms/show.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (1.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:1
+  Rendered messages/_message.html.erb (4.5ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:1
+  Rendered messages/_message.html.erb (1.8ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:1
+  Rendered messages/_message.html.erb (0.9ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:1
+  Rendered messages/_message.html.erb (1.1ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:1
+  Rendered messages/_message.html.erb (1.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:1
+  Rendered messages/_message.html.erb (1.0ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:1
+  Rendered messages/_message.html.erb (1.1ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:1
+  Rendered messages/_message.html.erb (1.3ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:1
+  Rendered messages/_message.html.erb (1.2ms)
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:1
+  Rendered messages/_message.html.erb (2.9ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:1
+  Rendered messages/_message.html.erb (1.3ms)
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:1
+  Rendered messages/_message.html.erb (1.3ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:1
+  Rendered messages/_message.html.erb (2.3ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/messages/_message.html.erb:1
+  Rendered messages/_message.html.erb (1.3ms)
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" INNER JOIN "user_rooms" ON "rooms"."id" = "user_rooms"."room_id" WHERE "user_rooms"."user_id" = ? ORDER BY "rooms"."last_message" DESC[0m  [["user_id", 1]]
+  ↳ app/views/rooms/show.html.erb:34
+  [1m[36mUserRoom Load (0.3ms)[0m  [1m[34mSELECT "user_rooms".* FROM "user_rooms" WHERE "user_rooms"."room_id" = ?[0m  [["room_id", 1]]
+  ↳ app/views/rooms/show.html.erb:34
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IN (?, ?)[0m  [["id", 1], ["id", 2]]
+  ↳ app/views/rooms/show.html.erb:34
+  Rendered rooms/show.html.erb within layouts/application (51.4ms)
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:4
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ?[0m  [["follower_id", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:15
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."follower_id" WHERE "followings"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:23
+  [1m[36mUserRoom Load (0.1ms)[0m  [1m[34mSELECT "user_rooms".* FROM "user_rooms" WHERE "user_rooms"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/helpers/application_helper.rb:33
+  Rendered layouts/_sidenav.html.erb (20.5ms)
+  [1m[35mCACHE  (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."follower_id" WHERE "followings"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:23
+  Rendered layouts/_sidenav.html.erb (8.2ms)
+  Rendered layouts/_navbar.html.erb (10.9ms)
+Completed 200 OK in 264ms (Views: 208.9ms | ActiveRecord: 6.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:38:36 +0300
+ChatChannel stopped streaming from chat:1
+Started GET "/cable" for ::1 at 2020-08-06 00:38:36 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:38:36 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/channels/application_cable/connection.rb:11
+Registered connection (Z2lkOi8vc3RvY2stdHdpdHRlci9Vc2VyLzE)
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRVVVpFZDA1UWRuRTVSemRGUlZkalYwZHJWbmcyYUVab0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTVhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGljR2xqTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25jR2xqTG1wd1p3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEMmx0WVdkbEwycHdaV2NHT3daVSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6NDI6NTUuOTY0WiIsInB1ciI6ImJsb2Jfa2V5In19--86970a0f37cee09cf1e247a50d5df6467968b456/pic.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22pic.jpg%22%3B+filename%2A%3DUTF-8%27%27pic.jpg" for ::1 at 2020-08-06 00:38:37 +0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"pic.jpg\"; filename*=UTF-8''pic.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRVVVpFZDA1UWRuRTVSemRGUlZkalYwZHJWbmcyYUVab0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTVhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGljR2xqTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25jR2xqTG1wd1p3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEMmx0WVdkbEwycHdaV2NHT3daVSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6NDI6NTUuOTY0WiIsInB1ciI6ImJsb2Jfa2V5In19--86970a0f37cee09cf1e247a50d5df6467968b456", "filename"=>"pic"}
+Completed 304 Not Modified in 9ms (ActiveRecord: 0.0ms)
+
+
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" INNER JOIN "user_rooms" ON "rooms"."id" = "user_rooms"."room_id" WHERE "user_rooms"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/channels/chat_channel.rb:7
+ChatChannel is transmitting the subscription confirmation
+ChatChannel is streaming from chat:1
+Started POST "/messages" for ::1 at 2020-08-06 00:38:40 +0300
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/9CnuDzefcGRHZU9O6UNg1spVlqXtOR2thnDJfkWmoouKk/8HlaNyO0Fvdo8X9wCyHD4GLAYZIES5zl7Ztphrw==", "message"=>{"room_id"=>"1", "body"=>"dsfdgdfg"}, "commit"=>"Submit"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mRoom Load (0.6ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:5
+  [1m[36mRoom Update (4.7ms)[0m  [1m[33mUPDATE "rooms" SET "last_message" = ?, "updated_at" = ? WHERE "rooms"."id" = ?[0m  [["last_message", "2020-08-05 21:38:40.526015"], ["updated_at", "2020-08-05 21:38:40.529085"], ["id", 1]]
+  ↳ app/controllers/messages_controller.rb:5
+  [1m[35m (240.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:5
+  [1m[36mUserRoom Load (0.6ms)[0m  [1m[34mSELECT "user_rooms".* FROM "user_rooms" WHERE "user_rooms"."room_id" = ?[0m  [["room_id", 1]]
+  ↳ app/controllers/messages_controller.rb:7
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:11
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:11
+  [1m[36mUserRoom Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "user_rooms" WHERE "user_rooms"."user_id" = ? AND "user_rooms"."id" != ? AND "user_rooms"."room_id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["room_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:11
+  [1m[36mUserRoom Update (1.4ms)[0m  [1m[33mUPDATE "user_rooms" SET "unread_messages" = ?, "updated_at" = ? WHERE "user_rooms"."id" = ?[0m  [["unread_messages", 0], ["updated_at", "2020-08-05 21:38:40.814907"], ["id", 1]]
+  ↳ app/controllers/messages_controller.rb:11
+  [1m[35m (150.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:11
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:12
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:12
+  [1m[36mUserRoom Exists (2.4ms)[0m  [1m[34mSELECT  1 AS one FROM "user_rooms" WHERE "user_rooms"."user_id" = ? AND "user_rooms"."id" != ? AND "user_rooms"."room_id" = ? LIMIT ?[0m  [["user_id", 2], ["id", 2], ["room_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:12
+  [1m[36mUserRoom Update (2.8ms)[0m  [1m[33mUPDATE "user_rooms" SET "unread_messages" = ?, "updated_at" = ? WHERE "user_rooms"."id" = ?[0m  [["unread_messages", 1], ["updated_at", "2020-08-05 21:38:40.997891"], ["id", 2]]
+  ↳ app/controllers/messages_controller.rb:12
+  [1m[35m (136.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:12
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:18
+  [1m[36mMessage Create (31.2ms)[0m  [1m[32mINSERT INTO "messages" ("user_id", "room_id", "created_at", "updated_at", "body") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 1], ["room_id", 1], ["created_at", "2020-08-05 21:38:41.157238"], ["updated_at", "2020-08-05 21:38:41.157238"], ["body", "dsfdgdfg"]]
+  ↳ app/controllers/messages_controller.rb:18
+  [1m[35m (83.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:18
+  Rendered messages/_message.html.erb (1.5ms)
+[ActionCable] Broadcasting to chat:1: {:message=>#<Message id: 15, user_id: 1, room_id: 1, created_at: "2020-08-05 21:38:41", updated_at: "2020-08-05 21:38:41", body: "dsfdgdfg">, :body=>"<p>Bekhzod: dsfdgdfg</p>"}
+Completed 200 OK in 815ms (Views: 23.5ms | ActiveRecord: 658.3ms)
+
+
+ChatChannel transmitting {"message"=>{"id"=>15, "user_id"=>1, "room_id"=>1, "created_at"=>"2020-08-05T21:38:41.157Z", "updated_at"=>"2020-08-05T21:38:41.157Z", "body"=>"dsfdgdfg"}, "body"=>"<p>Bekhzod: dsfdgdfg</p>"} (via streamed from chat:1)
+Started POST "/messages" for ::1 at 2020-08-06 00:38:50 +0300
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/9CnuDzefcGRHZU9O6UNg1spVlqXtOR2thnDJfkWmoouKk/8HlaNyO0Fvdo8X9wCyHD4GLAYZIES5zl7Ztphrw==", "message"=>{"room_id"=>"1", "body"=>"Like "}, "commit"=>"Submit"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT  "rooms".* FROM "rooms" WHERE "rooms"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:5
+  [1m[36mRoom Update (1.0ms)[0m  [1m[33mUPDATE "rooms" SET "last_message" = ?, "updated_at" = ? WHERE "rooms"."id" = ?[0m  [["last_message", "2020-08-05 21:38:50.232120"], ["updated_at", "2020-08-05 21:38:50.233445"], ["id", 1]]
+  ↳ app/controllers/messages_controller.rb:5
+  [1m[35m (108.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:5
+  [1m[36mUserRoom Load (0.4ms)[0m  [1m[34mSELECT "user_rooms".* FROM "user_rooms" WHERE "user_rooms"."room_id" = ?[0m  [["room_id", 1]]
+  ↳ app/controllers/messages_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:11
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:11
+  [1m[36mUserRoom Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "user_rooms" WHERE "user_rooms"."user_id" = ? AND "user_rooms"."id" != ? AND "user_rooms"."room_id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["room_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:11
+  [1m[35m (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:11
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:12
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:12
+  [1m[36mUserRoom Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "user_rooms" WHERE "user_rooms"."user_id" = ? AND "user_rooms"."id" != ? AND "user_rooms"."room_id" = ? LIMIT ?[0m  [["user_id", 2], ["id", 2], ["room_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:12
+  [1m[36mUserRoom Update (1.0ms)[0m  [1m[33mUPDATE "user_rooms" SET "unread_messages" = ?, "updated_at" = ? WHERE "user_rooms"."id" = ?[0m  [["unread_messages", 2], ["updated_at", "2020-08-05 21:38:50.382881"], ["id", 2]]
+  ↳ app/controllers/messages_controller.rb:12
+  [1m[35m (66.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:18
+  [1m[36mMessage Create (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("user_id", "room_id", "created_at", "updated_at", "body") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 1], ["room_id", 1], ["created_at", "2020-08-05 21:38:50.460321"], ["updated_at", "2020-08-05 21:38:50.460321"], ["body", "Like "]]
+  ↳ app/controllers/messages_controller.rb:18
+  [1m[35m (126.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:18
+  Rendered messages/_message.html.erb (5.0ms)
+[ActionCable] Broadcasting to chat:1: {:message=>#<Message id: 16, user_id: 1, room_id: 1, created_at: "2020-08-05 21:38:50", updated_at: "2020-08-05 21:38:50", body: "Like ">, :body=>"<p>Bekhzod: Like </p>"}
+Completed 200 OK in 393ms (Views: 24.2ms | ActiveRecord: 308.0ms)
+
+
+ChatChannel transmitting {"message"=>{"id"=>16, "user_id"=>1, "room_id"=>1, "created_at"=>"2020-08-05T21:38:50.460Z", "updated_at"=>"2020-08-05T21:38:50.460Z", "body"=>"Like "}, "body"=>"<p>Bekhzod: Like </p>"} (via streamed from chat:1)
+Started GET "/me" for ::1 at 2020-08-06 00:40:35 +0300
+Processing by UsersController#me as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "User"], ["name", "cover_image"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:4
+  [1m[36mActiveStorage::Blob Load (1.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:4
+  Rendered home/_tab.html.erb (0.3ms)
+  Rendered layouts/_flash.html.erb (0.7ms)
+  Rendered tweets/_new_tweet.html.erb (3.0ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tweets" WHERE "tweets"."author_id" = ?[0m  [["author_id", 1]]
+  ↳ app/views/users/show.html.erb:23
+  [1m[36mTweet Load (0.8ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets" WHERE "tweets"."author_id" = ?[0m  [["author_id", 1]]
+  ↳ app/views/users/show.html.erb:26
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tweets/_tweet.html.erb:3
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/tweets/_tweet.html.erb:3
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tweets/_tweet.html.erb:3
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."tweet_id" = ? AND "users"."id" = ? LIMIT ?[0m  [["tweet_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/application_helper.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."tweet_id" = ?[0m  [["tweet_id", 1]]
+  ↳ app/views/likes/_unlike_button.html.erb:1
+  Rendered likes/_unlike_button.html.erb (2.5ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."tweet_id" = ?[0m  [["tweet_id", 1]]
+  ↳ app/views/tweets/_tweet.html.erb:21
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."tweet_id" = ?[0m  [["tweet_id", 1]]
+  ↳ app/views/tweets/_tweet.html.erb:24
+  Rendered tweets/_tweet.html.erb (17.4ms)
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ? AND "users"."id" = ? LIMIT ?[0m  [["follower_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/application_helper.rb:3
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:43
+  [1m[36mCACHE ActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:43
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ?[0m  [["follower_id", 1]]
+  ↳ app/views/users/show.html.erb:60
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."follower_id" WHERE "followings"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/users/show.html.erb:64
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."follower_id" WHERE "followings"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/users/show.html.erb:74
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/_user.html.erb:3
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/_user.html.erb:3
+  Rendered users/_user.html.erb (7.9ms)
+  Rendered users/show.html.erb within layouts/application (72.8ms)
+  [1m[36mUserRoom Load (0.1ms)[0m  [1m[34mSELECT "user_rooms".* FROM "user_rooms" WHERE "user_rooms"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/helpers/application_helper.rb:33
+  Rendered layouts/_sidenav.html.erb (5.5ms)
+  Rendered layouts/_sidenav.html.erb (1.0ms)
+  Rendered layouts/_navbar.html.erb (2.5ms)
+Completed 200 OK in 293ms (Views: 282.1ms | ActiveRecord: 6.4ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:40:35 +0300
+ChatChannel stopped streaming from chat:1
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--72ee33104c4a91daa3444cc1da278e797524e7ac/4K%20NO%20LOGO%20G162.png" for ::1 at 2020-08-06 00:40:36 +0300
+Processing by ActiveStorage::BlobsController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--72ee33104c4a91daa3444cc1da278e797524e7ac", "filename"=>"4K NO LOGO G162"}
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (0.9ms) [0m[34mGenerated URL for file at key: qsmmWqLh2TvRxgSozhDTACt3 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjWE50YlZkeFRHZ3lWSFpTZUdkVGIzcG9SRlJCUTNRekJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSlhhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlORXNnVGs4Z1RFOUhUeUJITVRZeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuTkVzbE1qQk9UeVV5TUV4UFIwOGxNakJITVRZeUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUT0iLCJleHAiOiIyMDIwLTA4LTA1VDIxOjQ1OjM2LjEwOVoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--027a0b772114a27d26c00c7039468efb6484f593/4K%20NO%20LOGO%20G162.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%224K+NO+LOGO+G162.png%22%3B+filename%2A%3DUTF-8%27%274K%2520NO%2520LOGO%2520G162.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjWE50YlZkeFRHZ3lWSFpTZUdkVGIzcG9SRlJCUTNRekJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSlhhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlORXNnVGs4Z1RFOUhUeUJITVRZeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuTkVzbE1qQk9UeVV5TUV4UFIwOGxNakJITVRZeUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUT0iLCJleHAiOiIyMDIwLTA4LTA1VDIxOjQ1OjM2LjEwOVoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--027a0b772114a27d26c00c7039468efb6484f593/4K%20NO%20LOGO%20G162.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%224K+NO+LOGO+G162.png%22%3B+filename%2A%3DUTF-8%27%274K%2520NO%2520LOGO%2520G162.png
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/cable" for ::1 at 2020-08-06 00:40:36 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:40:36 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/channels/application_cable/connection.rb:11
+Registered connection (Z2lkOi8vc3RvY2stdHdpdHRlci9Vc2VyLzE)
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRVVVpFZDA1UWRuRTVSemRGUlZkalYwZHJWbmcyYUVab0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTVhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGljR2xqTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25jR2xqTG1wd1p3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEMmx0WVdkbEwycHdaV2NHT3daVSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6NDI6NTUuOTY0WiIsInB1ciI6ImJsb2Jfa2V5In19--86970a0f37cee09cf1e247a50d5df6467968b456/pic.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22pic.jpg%22%3B+filename%2A%3DUTF-8%27%27pic.jpg" for ::1 at 2020-08-06 00:40:36 +0300
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjWE50YlZkeFRHZ3lWSFpTZUdkVGIzcG9SRlJCUTNRekJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSlhhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlORXNnVGs4Z1RFOUhUeUJITVRZeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuTkVzbE1qQk9UeVV5TUV4UFIwOGxNakJITVRZeUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUT0iLCJleHAiOiIyMDIwLTA4LTA1VDIxOjQ1OjM2LjEwOVoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--027a0b772114a27d26c00c7039468efb6484f593/4K%20NO%20LOGO%20G162.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%224K+NO+LOGO+G162.png%22%3B+filename%2A%3DUTF-8%27%274K%2520NO%2520LOGO%2520G162.png" for ::1 at 2020-08-06 00:40:36 +0300
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"4K NO LOGO G162.png\"; filename*=UTF-8''4K%20NO%20LOGO%20G162.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjWE50YlZkeFRHZ3lWSFpTZUdkVGIzcG9SRlJCUTNRekJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSlhhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlORXNnVGs4Z1RFOUhUeUJITVRZeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuTkVzbE1qQk9UeVV5TUV4UFIwOGxNakJITVRZeUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUT0iLCJleHAiOiIyMDIwLTA4LTA1VDIxOjQ1OjM2LjEwOVoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--027a0b772114a27d26c00c7039468efb6484f593", "filename"=>"4K NO LOGO G162"}
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"pic.jpg\"; filename*=UTF-8''pic.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRVVVpFZDA1UWRuRTVSemRGUlZkalYwZHJWbmcyYUVab0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTVhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGljR2xqTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25jR2xqTG1wd1p3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEMmx0WVdkbEwycHdaV2NHT3daVSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6NDI6NTUuOTY0WiIsInB1ciI6ImJsb2Jfa2V5In19--86970a0f37cee09cf1e247a50d5df6467968b456", "filename"=>"pic"}
+Completed 304 Not Modified in 6ms (ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNM2hCVTFsa1JrMDNiWE5NV1c1eVFuTkdZbEpUT1VWNkJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSkxhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlORXNnVGs4Z1J6RTFPUzV3Ym1jaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkp6UkxKVEl3VGs4bE1qQkhNVFU1TG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6NDI6NTUuOTc3WiIsInB1ciI6ImJsb2Jfa2V5In19--570cf6ab4950d8fadef1cb8c599f5d27de303d7f/4K%20NO%20G159.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%224K+NO+G159.png%22%3B+filename%2A%3DUTF-8%27%274K%2520NO%2520G159.png" for ::1 at 2020-08-06 00:40:36 +0300
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"4K NO G159.png\"; filename*=UTF-8''4K%20NO%20G159.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNM2hCVTFsa1JrMDNiWE5NV1c1eVFuTkdZbEpUT1VWNkJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSkxhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlORXNnVGs4Z1J6RTFPUzV3Ym1jaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkp6UkxKVEl3VGs4bE1qQkhNVFU1TG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6NDI6NTUuOTc3WiIsInB1ciI6ImJsb2Jfa2V5In19--570cf6ab4950d8fadef1cb8c599f5d27de303d7f", "filename"=>"4K NO G159"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms)
+
+
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" INNER JOIN "user_rooms" ON "rooms"."id" = "user_rooms"."room_id" WHERE "user_rooms"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/channels/chat_channel.rb:7
+ChatChannel is transmitting the subscription confirmation
+ChatChannel is streaming from chat:1
