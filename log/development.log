@@ -11285,3 +11285,561 @@ Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms)
   ↳ app/channels/chat_channel.rb:7
 ChatChannel is transmitting the subscription confirmation
 ChatChannel is streaming from chat:1
+Started GET "/me" for ::1 at 2020-08-06 00:50:56 +0300
+Started GET "/cable" for ::1 at 2020-08-06 00:50:56 +0300
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#me as HTML
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:50:57 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (26.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  ↳ app/channels/application_cable/connection.rb:11
+Registered connection (Z2lkOi8vc3RvY2stdHdpdHRlci9Vc2VyLzE)
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "User"], ["name", "cover_image"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:4
+  [1m[36mActiveStorage::Blob Load (0.9ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:4
+  Rendered home/_tab.html.erb (1.3ms)
+  Rendered layouts/_flash.html.erb (2.7ms)
+  [1m[36mRoom Load (3.0ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" INNER JOIN "user_rooms" ON "rooms"."id" = "user_rooms"."room_id" WHERE "user_rooms"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/channels/chat_channel.rb:7
+ChatChannel is transmitting the subscription confirmation
+ChatChannel is streaming from chat:1
+  Rendered tweets/_new_tweet.html.erb (214.4ms)
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tweets" WHERE "tweets"."author_id" = ?[0m  [["author_id", 1]]
+  ↳ app/views/users/show.html.erb:23
+  [1m[36mTweet Load (2.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets" WHERE "tweets"."author_id" = ?[0m  [["author_id", 1]]
+  ↳ app/views/users/show.html.erb:26
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tweets/_tweet.html.erb:3
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/tweets/_tweet.html.erb:3
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tweets/_tweet.html.erb:3
+  [1m[36mUser Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."tweet_id" = ? AND "users"."id" = ? LIMIT ?[0m  [["tweet_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/application_helper.rb:7
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."tweet_id" = ?[0m  [["tweet_id", 1]]
+  ↳ app/views/likes/_unlike_button.html.erb:1
+  Rendered likes/_unlike_button.html.erb (13.9ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."tweet_id" = ?[0m  [["tweet_id", 1]]
+  ↳ app/views/tweets/_tweet.html.erb:21
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."tweet_id" = ?[0m  [["tweet_id", 1]]
+  ↳ app/views/tweets/_tweet.html.erb:24
+  Rendered tweets/_tweet.html.erb (214.1ms)
+  [1m[36mUser Exists (2.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ? AND "users"."id" = ? LIMIT ?[0m  [["follower_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/application_helper.rb:3
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:43
+  [1m[36mCACHE ActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:43
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ?[0m  [["follower_id", 1]]
+  ↳ app/views/users/show.html.erb:60
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."follower_id" WHERE "followings"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/users/show.html.erb:64
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."follower_id" WHERE "followings"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/users/show.html.erb:74
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/_user.html.erb:3
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/_user.html.erb:3
+  Rendered users/_user.html.erb (7.0ms)
+  Rendered users/show.html.erb within layouts/application (1460.2ms)
+  [1m[36mUserRoom Load (0.5ms)[0m  [1m[34mSELECT "user_rooms".* FROM "user_rooms" WHERE "user_rooms"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/helpers/application_helper.rb:33
+  Rendered layouts/_sidenav.html.erb (58.4ms)
+  Rendered layouts/_sidenav.html.erb (2.0ms)
+  Rendered layouts/_navbar.html.erb (5.1ms)
+Completed 200 OK in 6988ms (Views: 6378.8ms | ActiveRecord: 27.5ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:51:04 +0300
+ChatChannel stopped streaming from chat:1
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--72ee33104c4a91daa3444cc1da278e797524e7ac/4K%20NO%20LOGO%20G162.png" for ::1 at 2020-08-06 00:51:05 +0300
+Processing by ActiveStorage::BlobsController#show as PNG
+Started GET "/cable" for ::1 at 2020-08-06 00:51:06 +0300
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--72ee33104c4a91daa3444cc1da278e797524e7ac", "filename"=>"4K NO LOGO G162"}
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5c7e8c4e01c52b9e600895e83510fe5fa199ba21/pic.jpg" for ::1 at 2020-08-06 00:51:06 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:51:06 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5c7e8c4e01c52b9e600895e83510fe5fa199ba21", "filename"=>"pic"}
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5c18449474c555c27b5b21512e921041e4dc24b1/4K%20NO%20G159.png" for ::1 at 2020-08-06 00:51:06 +0300
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/channels/application_cable/connection.rb:11
+Registered connection (Z2lkOi8vc3RvY2stdHdpdHRlci9Vc2VyLzE)
+Processing by ActiveStorage::BlobsController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5c18449474c555c27b5b21512e921041e4dc24b1", "filename"=>"4K NO G159"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (1.6ms) [0m[34mGenerated URL for file at key: 3xASYdFM7msLYnrBsFbRS9Ez (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNM2hCVTFsa1JrMDNiWE5NV1c1eVFuTkdZbEpUT1VWNkJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSkxhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlORXNnVGs4Z1J6RTFPUzV3Ym1jaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkp6UkxKVEl3VGs4bE1qQkhNVFU1TG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6NTY6MDYuNDc4WiIsInB1ciI6ImJsb2Jfa2V5In19--75852532bcdeb7c892a7f1bd72b94c16b950ecc1/4K%20NO%20G159.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%224K+NO+G159.png%22%3B+filename%2A%3DUTF-8%27%274K%2520NO%2520G159.png)[0m
+[36m  Disk Storage (0.6ms) [0m[34mGenerated URL for file at key: QFDwNPvq9G7EEWcWGkVx6hFh (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRVVVpFZDA1UWRuRTVSemRGUlZkalYwZHJWbmcyYUVab0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTVhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGljR2xqTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25jR2xqTG1wd1p3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEMmx0WVdkbEwycHdaV2NHT3daVSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6NTY6MDYuNDc2WiIsInB1ciI6ImJsb2Jfa2V5In19--43f50e1e6b5cb08ed2fb75720b91ffa9f17d52c0/pic.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22pic.jpg%22%3B+filename%2A%3DUTF-8%27%27pic.jpg)[0m
+[36m  Disk Storage (1.6ms) [0m[34mGenerated URL for file at key: qsmmWqLh2TvRxgSozhDTACt3 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjWE50YlZkeFRHZ3lWSFpTZUdkVGIzcG9SRlJCUTNRekJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSlhhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlORXNnVGs4Z1RFOUhUeUJITVRZeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuTkVzbE1qQk9UeVV5TUV4UFIwOGxNakJITVRZeUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUT0iLCJleHAiOiIyMDIwLTA4LTA1VDIxOjU2OjA2LjQ2N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--d6d20bb437f36511165c676add84e643e681f577/4K%20NO%20LOGO%20G162.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%224K+NO+LOGO+G162.png%22%3B+filename%2A%3DUTF-8%27%274K%2520NO%2520LOGO%2520G162.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNM2hCVTFsa1JrMDNiWE5NV1c1eVFuTkdZbEpUT1VWNkJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSkxhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlORXNnVGs4Z1J6RTFPUzV3Ym1jaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkp6UkxKVEl3VGs4bE1qQkhNVFU1TG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6NTY6MDYuNDc4WiIsInB1ciI6ImJsb2Jfa2V5In19--75852532bcdeb7c892a7f1bd72b94c16b950ecc1/4K%20NO%20G159.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%224K+NO+G159.png%22%3B+filename%2A%3DUTF-8%27%274K%2520NO%2520G159.png
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRVVVpFZDA1UWRuRTVSemRGUlZkalYwZHJWbmcyYUVab0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTVhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGljR2xqTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25jR2xqTG1wd1p3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEMmx0WVdkbEwycHdaV2NHT3daVSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6NTY6MDYuNDc2WiIsInB1ciI6ImJsb2Jfa2V5In19--43f50e1e6b5cb08ed2fb75720b91ffa9f17d52c0/pic.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22pic.jpg%22%3B+filename%2A%3DUTF-8%27%27pic.jpg
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjWE50YlZkeFRHZ3lWSFpTZUdkVGIzcG9SRlJCUTNRekJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSlhhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlORXNnVGs4Z1RFOUhUeUJITVRZeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuTkVzbE1qQk9UeVV5TUV4UFIwOGxNakJITVRZeUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUT0iLCJleHAiOiIyMDIwLTA4LTA1VDIxOjU2OjA2LjQ2N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--d6d20bb437f36511165c676add84e643e681f577/4K%20NO%20LOGO%20G162.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%224K+NO+LOGO+G162.png%22%3B+filename%2A%3DUTF-8%27%274K%2520NO%2520LOGO%2520G162.png
+Completed 302 Found in 7ms (ActiveRecord: 0.3ms)
+
+
+Completed 302 Found in 105ms (ActiveRecord: 0.2ms)
+
+
+Completed 302 Found in 112ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjWE50YlZkeFRHZ3lWSFpTZUdkVGIzcG9SRlJCUTNRekJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSlhhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlORXNnVGs4Z1RFOUhUeUJITVRZeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuTkVzbE1qQk9UeVV5TUV4UFIwOGxNakJITVRZeUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUT0iLCJleHAiOiIyMDIwLTA4LTA1VDIxOjU2OjA2LjQ2N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--d6d20bb437f36511165c676add84e643e681f577/4K%20NO%20LOGO%20G162.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%224K+NO+LOGO+G162.png%22%3B+filename%2A%3DUTF-8%27%274K%2520NO%2520LOGO%2520G162.png" for ::1 at 2020-08-06 00:51:06 +0300
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"4K NO LOGO G162.png\"; filename*=UTF-8''4K%20NO%20LOGO%20G162.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjWE50YlZkeFRHZ3lWSFpTZUdkVGIzcG9SRlJCUTNRekJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSlhhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlORXNnVGs4Z1RFOUhUeUJITVRZeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuTkVzbE1qQk9UeVV5TUV4UFIwOGxNakJITVRZeUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUT0iLCJleHAiOiIyMDIwLTA4LTA1VDIxOjU2OjA2LjQ2N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--d6d20bb437f36511165c676add84e643e681f577", "filename"=>"4K NO LOGO G162"}
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNM2hCVTFsa1JrMDNiWE5NV1c1eVFuTkdZbEpUT1VWNkJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSkxhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlORXNnVGs4Z1J6RTFPUzV3Ym1jaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkp6UkxKVEl3VGs4bE1qQkhNVFU1TG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6NTY6MDYuNDc4WiIsInB1ciI6ImJsb2Jfa2V5In19--75852532bcdeb7c892a7f1bd72b94c16b950ecc1/4K%20NO%20G159.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%224K+NO+G159.png%22%3B+filename%2A%3DUTF-8%27%274K%2520NO%2520G159.png" for ::1 at 2020-08-06 00:51:06 +0300
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRVVVpFZDA1UWRuRTVSemRGUlZkalYwZHJWbmcyYUVab0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTVhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGljR2xqTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25jR2xqTG1wd1p3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEMmx0WVdkbEwycHdaV2NHT3daVSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6NTY6MDYuNDc2WiIsInB1ciI6ImJsb2Jfa2V5In19--43f50e1e6b5cb08ed2fb75720b91ffa9f17d52c0/pic.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22pic.jpg%22%3B+filename%2A%3DUTF-8%27%27pic.jpg" for ::1 at 2020-08-06 00:51:06 +0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"pic.jpg\"; filename*=UTF-8''pic.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRVVVpFZDA1UWRuRTVSemRGUlZkalYwZHJWbmcyYUVab0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTVhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGljR2xqTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25jR2xqTG1wd1p3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEMmx0WVdkbEwycHdaV2NHT3daVSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6NTY6MDYuNDc2WiIsInB1ciI6ImJsb2Jfa2V5In19--43f50e1e6b5cb08ed2fb75720b91ffa9f17d52c0", "filename"=>"pic"}
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"4K NO G159.png\"; filename*=UTF-8''4K%20NO%20G159.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNM2hCVTFsa1JrMDNiWE5NV1c1eVFuTkdZbEpUT1VWNkJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSkxhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlORXNnVGs4Z1J6RTFPUzV3Ym1jaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkp6UkxKVEl3VGs4bE1qQkhNVFU1TG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6NTY6MDYuNDc4WiIsInB1ciI6ImJsb2Jfa2V5In19--75852532bcdeb7c892a7f1bd72b94c16b950ecc1", "filename"=>"4K NO G159"}
+Completed 200 OK in 121ms (ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 116ms (ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 110ms (ActiveRecord: 0.0ms)
+
+
+  [1m[36mRoom Load (0.6ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" INNER JOIN "user_rooms" ON "rooms"."id" = "user_rooms"."room_id" WHERE "user_rooms"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/channels/chat_channel.rb:7
+ChatChannel is transmitting the subscription confirmation
+ChatChannel is streaming from chat:1
+Started POST "/tweets" for ::1 at 2020-08-06 00:51:19 +0300
+Processing by TweetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DfQwz8wJWQz/pzPC6nZlgQWbyLwN48KE6nMIqFd+3kzcDtiL7oGpBYO/GyXtjLQAlsJm/ipPQnNOjfL2yLIlaQ==", "tweet"=>{"author_id"=>"1", "text"=>"hjkl;"}, "commit"=>"Publish"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tweets_controller.rb:8
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tweets_controller.rb:8
+  [1m[36mTweet Create (56.8ms)[0m  [1m[32mINSERT INTO "tweets" ("text", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["text", "hjkl;"], ["author_id", 1], ["created_at", "2020-08-05 21:51:19.273231"], ["updated_at", "2020-08-05 21:51:19.273231"]]
+  ↳ app/controllers/tweets_controller.rb:8
+  [1m[35m (195.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tweets_controller.rb:8
+Redirected to http://localhost:3000/
+Completed 302 Found in 275ms (ActiveRecord: 253.7ms)
+
+
+Started GET "/" for ::1 at 2020-08-06 00:51:19 +0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_tab.html.erb (1.5ms)
+  Rendered layouts/_flash.html.erb (1.2ms)
+  Rendered stocks/_show.html.erb (2.2ms)
+  Rendered tweets/_new_tweet.html.erb (3.6ms)
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "tweets" WHERE ("tweets"."author_id" IN (SELECT "users"."id" FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ?) OR "tweets"."author_id" = ?)[0m  [["follower_id", 1], ["author_id", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets" WHERE ("tweets"."author_id" IN (SELECT "users"."id" FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ?) OR "tweets"."author_id" = ?) ORDER BY "tweets"."updated_at" DESC[0m  [["follower_id", 1], ["author_id", 1]]
+  ↳ app/views/home/index.html.erb:21
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  ↳ app/views/home/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? AND "active_storage_attachments"."record_id" = ?[0m  [["record_type", "User"], ["name", "photo"], ["record_id", 1]]
+  ↳ app/views/home/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? AND "active_storage_attachments"."record_id" = ?[0m  [["record_type", "User"], ["name", "cover_image"], ["record_id", 1]]
+  ↳ app/views/home/index.html.erb:21
+  [1m[36mLike Load (0.5ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."tweet_id" IN (?, ?)[0m  [["tweet_id", 2], ["tweet_id", 1]]
+  ↳ app/views/home/index.html.erb:21
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."tweet_id" IN (?, ?)[0m  [["tweet_id", 2], ["tweet_id", 1]]
+  ↳ app/views/home/index.html.erb:21
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tweets/_tweet.html.erb:3
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."tweet_id" = ? AND "users"."id" = ? LIMIT ?[0m  [["tweet_id", 2], ["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/application_helper.rb:7
+  Rendered likes/_like_button.html.erb (3.2ms)
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."tweet_id" = ? AND "users"."id" = ? LIMIT ?[0m  [["tweet_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/application_helper.rb:7
+  Rendered likes/_unlike_button.html.erb (1.3ms)
+  Rendered collection of tweets/_tweet.html.erb [2 times] (89.7ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" != ? AND "users"."id" NOT IN (SELECT "users"."id" FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ?)[0m  [["id", 1], ["follower_id", 1]]
+  ↳ app/views/home/index.html.erb:33
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/_user.html.erb:3
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/_user.html.erb:3
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ? AND "users"."id" = ? LIMIT ?[0m  [["follower_id", 1], ["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/application_helper.rb:3
+  Rendered users/_follow.html.erb (0.9ms)
+  Rendered users/_user.html.erb (56.4ms)
+  Rendered home/index.html.erb within layouts/application (283.3ms)
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:4
+  [1m[36mCACHE ActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ?[0m  [["follower_id", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:15
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."follower_id" WHERE "followings"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:23
+  [1m[36mUserRoom Load (0.2ms)[0m  [1m[34mSELECT "user_rooms".* FROM "user_rooms" WHERE "user_rooms"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/helpers/application_helper.rb:33
+  Rendered layouts/_sidenav.html.erb (8.1ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."follower_id" WHERE "followings"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:23
+  Rendered layouts/_sidenav.html.erb (2.2ms)
+  Rendered layouts/_navbar.html.erb (3.4ms)
+Completed 200 OK in 427ms (Views: 394.3ms | ActiveRecord: 9.1ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:51:20 +0300
+ChatChannel stopped streaming from chat:1
+Started GET "/cable" for ::1 at 2020-08-06 00:51:20 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:51:20 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/channels/application_cable/connection.rb:11
+Registered connection (Z2lkOi8vc3RvY2stdHdpdHRlci9Vc2VyLzE)
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNM2hCVTFsa1JrMDNiWE5NV1c1eVFuTkdZbEpUT1VWNkJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSkxhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlORXNnVGs4Z1J6RTFPUzV3Ym1jaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkp6UkxKVEl3VGs4bE1qQkhNVFU1TG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6NTY6MDYuNDc4WiIsInB1ciI6ImJsb2Jfa2V5In19--75852532bcdeb7c892a7f1bd72b94c16b950ecc1/4K%20NO%20G159.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%224K+NO+G159.png%22%3B+filename%2A%3DUTF-8%27%274K%2520NO%2520G159.png" for ::1 at 2020-08-06 00:51:20 +0300
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"4K NO G159.png\"; filename*=UTF-8''4K%20NO%20G159.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNM2hCVTFsa1JrMDNiWE5NV1c1eVFuTkdZbEpUT1VWNkJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSkxhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlORXNnVGs4Z1J6RTFPUzV3Ym1jaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkp6UkxKVEl3VGs4bE1qQkhNVFU1TG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6NTY6MDYuNDc4WiIsInB1ciI6ImJsb2Jfa2V5In19--75852532bcdeb7c892a7f1bd72b94c16b950ecc1", "filename"=>"4K NO G159"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRVVVpFZDA1UWRuRTVSemRGUlZkalYwZHJWbmcyYUVab0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTVhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGljR2xqTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25jR2xqTG1wd1p3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEMmx0WVdkbEwycHdaV2NHT3daVSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6NTY6MDYuNDc2WiIsInB1ciI6ImJsb2Jfa2V5In19--43f50e1e6b5cb08ed2fb75720b91ffa9f17d52c0/pic.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22pic.jpg%22%3B+filename%2A%3DUTF-8%27%27pic.jpg" for ::1 at 2020-08-06 00:51:20 +0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"pic.jpg\"; filename*=UTF-8''pic.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRVVVpFZDA1UWRuRTVSemRGUlZkalYwZHJWbmcyYUVab0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTVhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGljR2xqTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25jR2xqTG1wd1p3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEMmx0WVdkbEwycHdaV2NHT3daVSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6NTY6MDYuNDc2WiIsInB1ciI6ImJsb2Jfa2V5In19--43f50e1e6b5cb08ed2fb75720b91ffa9f17d52c0", "filename"=>"pic"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms)
+
+
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" INNER JOIN "user_rooms" ON "rooms"."id" = "user_rooms"."room_id" WHERE "user_rooms"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/channels/chat_channel.rb:7
+ChatChannel is transmitting the subscription confirmation
+ChatChannel is streaming from chat:1
+Started GET "/me" for ::1 at 2020-08-06 00:51:25 +0300
+Processing by UsersController#me as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "User"], ["name", "cover_image"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:4
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:4
+  Rendered home/_tab.html.erb (0.5ms)
+  Rendered layouts/_flash.html.erb (0.9ms)
+  Rendered tweets/_new_tweet.html.erb (3.2ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tweets" WHERE "tweets"."author_id" = ?[0m  [["author_id", 1]]
+  ↳ app/views/users/show.html.erb:23
+  [1m[36mTweet Load (0.2ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets" WHERE "tweets"."author_id" = ?[0m  [["author_id", 1]]
+  ↳ app/views/users/show.html.erb:26
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tweets/_tweet.html.erb:3
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/tweets/_tweet.html.erb:3
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tweets/_tweet.html.erb:3
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."tweet_id" = ? AND "users"."id" = ? LIMIT ?[0m  [["tweet_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/application_helper.rb:7
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."tweet_id" = ?[0m  [["tweet_id", 1]]
+  ↳ app/views/likes/_unlike_button.html.erb:1
+  Rendered likes/_unlike_button.html.erb (9.7ms)
+  [1m[35mCACHE  (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."tweet_id" = ?[0m  [["tweet_id", 1]]
+  ↳ app/views/tweets/_tweet.html.erb:21
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."tweet_id" = ?[0m  [["tweet_id", 1]]
+  ↳ app/views/tweets/_tweet.html.erb:24
+  Rendered tweets/_tweet.html.erb (45.8ms)
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tweets/_tweet.html.erb:3
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/tweets/_tweet.html.erb:3
+  [1m[36mCACHE ActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tweets/_tweet.html.erb:3
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."tweet_id" = ? AND "users"."id" = ? LIMIT ?[0m  [["tweet_id", 2], ["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/application_helper.rb:7
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."tweet_id" = ?[0m  [["tweet_id", 2]]
+  ↳ app/views/likes/_like_button.html.erb:1
+  Rendered likes/_like_button.html.erb (6.6ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."tweet_id" = ?[0m  [["tweet_id", 2]]
+  ↳ app/views/tweets/_tweet.html.erb:24
+  Rendered tweets/_tweet.html.erb (30.0ms)
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ? AND "users"."id" = ? LIMIT ?[0m  [["follower_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/application_helper.rb:3
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:43
+  [1m[36mCACHE ActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:43
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ?[0m  [["follower_id", 1]]
+  ↳ app/views/users/show.html.erb:60
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."follower_id" WHERE "followings"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/users/show.html.erb:64
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."follower_id" WHERE "followings"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/users/show.html.erb:74
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/_user.html.erb:3
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/_user.html.erb:3
+  Rendered users/_user.html.erb (31.2ms)
+  Rendered users/show.html.erb within layouts/application (161.2ms)
+  [1m[36mUserRoom Load (0.1ms)[0m  [1m[34mSELECT "user_rooms".* FROM "user_rooms" WHERE "user_rooms"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/helpers/application_helper.rb:33
+  Rendered layouts/_sidenav.html.erb (3.0ms)
+  Rendered layouts/_sidenav.html.erb (0.9ms)
+  Rendered layouts/_navbar.html.erb (1.9ms)
+Completed 200 OK in 282ms (Views: 274.7ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjWE50YlZkeFRHZ3lWSFpTZUdkVGIzcG9SRlJCUTNRekJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSlhhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlORXNnVGs4Z1RFOUhUeUJITVRZeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuTkVzbE1qQk9UeVV5TUV4UFIwOGxNakJITVRZeUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUT0iLCJleHAiOiIyMDIwLTA4LTA1VDIxOjU2OjA2LjQ2N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--d6d20bb437f36511165c676add84e643e681f577/4K%20NO%20LOGO%20G162.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%224K+NO+LOGO+G162.png%22%3B+filename%2A%3DUTF-8%27%274K%2520NO%2520LOGO%2520G162.png" for ::1 at 2020-08-06 00:51:26 +0300
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"4K NO LOGO G162.png\"; filename*=UTF-8''4K%20NO%20LOGO%20G162.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjWE50YlZkeFRHZ3lWSFpTZUdkVGIzcG9SRlJCUTNRekJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSlhhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlORXNnVGs4Z1RFOUhUeUJITVRZeUxuQnVaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuTkVzbE1qQk9UeVV5TUV4UFIwOGxNakJITVRZeUxuQnVad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRG1sdFlXZGxMM0J1WndZN0JsUT0iLCJleHAiOiIyMDIwLTA4LTA1VDIxOjU2OjA2LjQ2N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--d6d20bb437f36511165c676add84e643e681f577", "filename"=>"4K NO LOGO G162"}
+Completed 304 Not Modified in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-06 00:51:33 +0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_tab.html.erb (0.4ms)
+  Rendered layouts/_flash.html.erb (0.7ms)
+  Rendered stocks/_show.html.erb (0.7ms)
+  Rendered tweets/_new_tweet.html.erb (1.1ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tweets" WHERE ("tweets"."author_id" IN (SELECT "users"."id" FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ?) OR "tweets"."author_id" = ?)[0m  [["follower_id", 1], ["author_id", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mTweet Load (0.2ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets" WHERE ("tweets"."author_id" IN (SELECT "users"."id" FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ?) OR "tweets"."author_id" = ?) ORDER BY "tweets"."updated_at" DESC[0m  [["follower_id", 1], ["author_id", 1]]
+  ↳ app/views/home/index.html.erb:21
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  ↳ app/views/home/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? AND "active_storage_attachments"."record_id" = ?[0m  [["record_type", "User"], ["name", "photo"], ["record_id", 1]]
+  ↳ app/views/home/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? AND "active_storage_attachments"."record_id" = ?[0m  [["record_type", "User"], ["name", "cover_image"], ["record_id", 1]]
+  ↳ app/views/home/index.html.erb:21
+  [1m[36mLike Load (0.2ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."tweet_id" IN (?, ?)[0m  [["tweet_id", 2], ["tweet_id", 1]]
+  ↳ app/views/home/index.html.erb:21
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."tweet_id" IN (?, ?)[0m  [["tweet_id", 2], ["tweet_id", 1]]
+  ↳ app/views/home/index.html.erb:21
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tweets/_tweet.html.erb:3
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."tweet_id" = ? AND "users"."id" = ? LIMIT ?[0m  [["tweet_id", 2], ["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/application_helper.rb:7
+  Rendered likes/_like_button.html.erb (1.4ms)
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."tweet_id" = ? AND "users"."id" = ? LIMIT ?[0m  [["tweet_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/application_helper.rb:7
+  Rendered likes/_unlike_button.html.erb (6.9ms)
+  Rendered collection of tweets/_tweet.html.erb [2 times] (33.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" != ? AND "users"."id" NOT IN (SELECT "users"."id" FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ?)[0m  [["id", 1], ["follower_id", 1]]
+  ↳ app/views/home/index.html.erb:33
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/_user.html.erb:3
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/_user.html.erb:3
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ? AND "users"."id" = ? LIMIT ?[0m  [["follower_id", 1], ["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/application_helper.rb:3
+  Rendered users/_follow.html.erb (8.5ms)
+  Rendered users/_user.html.erb (25.9ms)
+  Rendered home/index.html.erb within layouts/application (83.9ms)
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:4
+  [1m[36mCACHE ActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ?[0m  [["follower_id", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:15
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."follower_id" WHERE "followings"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:23
+  [1m[36mUserRoom Load (0.1ms)[0m  [1m[34mSELECT "user_rooms".* FROM "user_rooms" WHERE "user_rooms"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/helpers/application_helper.rb:33
+  Rendered layouts/_sidenav.html.erb (8.6ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."follower_id" WHERE "followings"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:23
+  Rendered layouts/_sidenav.html.erb (1.8ms)
+  Rendered layouts/_navbar.html.erb (2.7ms)
+Completed 200 OK in 284ms (Views: 274.2ms | ActiveRecord: 4.3ms)
+
+
+Started POST "/tweets" for ::1 at 2020-08-06 00:51:40 +0300
+Processing by TweetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xyAqgcfQ4yT1AHlU7RfHrkEH/rcgoGWpjCAafnjrhVLqkQH9DTmUtpA8zcw18eHYk7MoirdL0YM2zjtP5IUHog==", "tweet"=>{"author_id"=>"1", "text"=>"jklk;"}, "commit"=>"Publish"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tweets_controller.rb:8
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tweets_controller.rb:8
+  [1m[36mTweet Create (1.3ms)[0m  [1m[32mINSERT INTO "tweets" ("text", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["text", "jklk;"], ["author_id", 1], ["created_at", "2020-08-05 21:51:40.156850"], ["updated_at", "2020-08-05 21:51:40.156850"]]
+  ↳ app/controllers/tweets_controller.rb:8
+  [1m[35m (526.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tweets_controller.rb:8
+Redirected to http://localhost:3000/
+Completed 302 Found in 550ms (ActiveRecord: 528.9ms)
+
+
+Started GET "/" for ::1 at 2020-08-06 00:51:40 +0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_tab.html.erb (0.8ms)
+  Rendered layouts/_flash.html.erb (1.1ms)
+  Rendered stocks/_show.html.erb (0.8ms)
+  Rendered tweets/_new_tweet.html.erb (1.7ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tweets" WHERE ("tweets"."author_id" IN (SELECT "users"."id" FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ?) OR "tweets"."author_id" = ?)[0m  [["follower_id", 1], ["author_id", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets" WHERE ("tweets"."author_id" IN (SELECT "users"."id" FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ?) OR "tweets"."author_id" = ?) ORDER BY "tweets"."updated_at" DESC[0m  [["follower_id", 1], ["author_id", 1]]
+  ↳ app/views/home/index.html.erb:21
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  ↳ app/views/home/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? AND "active_storage_attachments"."record_id" = ?[0m  [["record_type", "User"], ["name", "photo"], ["record_id", 1]]
+  ↳ app/views/home/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? AND "active_storage_attachments"."record_id" = ?[0m  [["record_type", "User"], ["name", "cover_image"], ["record_id", 1]]
+  ↳ app/views/home/index.html.erb:21
+  [1m[36mLike Load (0.5ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."tweet_id" IN (?, ?, ?)[0m  [["tweet_id", 3], ["tweet_id", 2], ["tweet_id", 1]]
+  ↳ app/views/home/index.html.erb:21
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."tweet_id" IN (?, ?, ?)[0m  [["tweet_id", 3], ["tweet_id", 2], ["tweet_id", 1]]
+  ↳ app/views/home/index.html.erb:21
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tweets/_tweet.html.erb:3
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."tweet_id" = ? AND "users"."id" = ? LIMIT ?[0m  [["tweet_id", 3], ["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/application_helper.rb:7
+  Rendered likes/_like_button.html.erb (0.7ms)
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."tweet_id" = ? AND "users"."id" = ? LIMIT ?[0m  [["tweet_id", 2], ["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/application_helper.rb:7
+  Rendered likes/_like_button.html.erb (0.3ms)
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."tweet_id" = ? AND "users"."id" = ? LIMIT ?[0m  [["tweet_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/application_helper.rb:7
+  Rendered likes/_unlike_button.html.erb (1.2ms)
+  Rendered collection of tweets/_tweet.html.erb [3 times] (23.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" != ? AND "users"."id" NOT IN (SELECT "users"."id" FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ?)[0m  [["id", 1], ["follower_id", 1]]
+  ↳ app/views/home/index.html.erb:33
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/users/_user.html.erb:3
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/_user.html.erb:3
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ? AND "users"."id" = ? LIMIT ?[0m  [["follower_id", 1], ["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/application_helper.rb:3
+  Rendered users/_follow.html.erb (3.7ms)
+  Rendered users/_user.html.erb (29.1ms)
+  Rendered home/index.html.erb within layouts/application (82.0ms)
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:4
+  [1m[36mCACHE ActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."followed_id" WHERE "followings"."follower_id" = ?[0m  [["follower_id", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:15
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."follower_id" WHERE "followings"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:23
+  [1m[36mUserRoom Load (0.1ms)[0m  [1m[34mSELECT "user_rooms".* FROM "user_rooms" WHERE "user_rooms"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/helpers/application_helper.rb:33
+  Rendered layouts/_sidenav.html.erb (9.6ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "followings" ON "users"."id" = "followings"."follower_id" WHERE "followings"."followed_id" = ?[0m  [["followed_id", 1]]
+  ↳ app/views/layouts/_sidenav.html.erb:23
+  Rendered layouts/_sidenav.html.erb (2.3ms)
+  Rendered layouts/_navbar.html.erb (3.6ms)
+Completed 200 OK in 227ms (Views: 205.7ms | ActiveRecord: 5.9ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2020-08-06 00:51:40 +0300
+ChatChannel stopped streaming from chat:1
+Started GET "/cable" for ::1 at 2020-08-06 00:51:41 +0300
+Started GET "/cable/" [WebSocket] for ::1 at 2020-08-06 00:51:41 +0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/channels/application_cable/connection.rb:11
+Registered connection (Z2lkOi8vc3RvY2stdHdpdHRlci9Vc2VyLzE)
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRVVVpFZDA1UWRuRTVSemRGUlZkalYwZHJWbmcyYUVab0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTVhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGljR2xqTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25jR2xqTG1wd1p3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEMmx0WVdkbEwycHdaV2NHT3daVSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6NTY6MDYuNDc2WiIsInB1ciI6ImJsb2Jfa2V5In19--43f50e1e6b5cb08ed2fb75720b91ffa9f17d52c0/pic.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22pic.jpg%22%3B+filename%2A%3DUTF-8%27%27pic.jpg" for ::1 at 2020-08-06 00:51:41 +0300
+Processing by ActiveStorage::DiskController#show as JPEG
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNM2hCVTFsa1JrMDNiWE5NV1c1eVFuTkdZbEpUT1VWNkJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSkxhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlORXNnVGs4Z1J6RTFPUzV3Ym1jaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkp6UkxKVEl3VGs4bE1qQkhNVFU1TG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6NTY6MDYuNDc4WiIsInB1ciI6ImJsb2Jfa2V5In19--75852532bcdeb7c892a7f1bd72b94c16b950ecc1/4K%20NO%20G159.png?content_type=image%2Fpng&disposition=inline%3B+filename%3D%224K+NO+G159.png%22%3B+filename%2A%3DUTF-8%27%274K%2520NO%2520G159.png" for ::1 at 2020-08-06 00:51:41 +0300
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"pic.jpg\"; filename*=UTF-8''pic.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRVVVpFZDA1UWRuRTVSemRGUlZkalYwZHJWbmcyYUVab0Jqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTVhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGljR2xqTG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25jR2xqTG1wd1p3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEMmx0WVdkbEwycHdaV2NHT3daVSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6NTY6MDYuNDc2WiIsInB1ciI6ImJsb2Jfa2V5In19--43f50e1e6b5cb08ed2fb75720b91ffa9f17d52c0", "filename"=>"pic"}
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"4K NO G159.png\"; filename*=UTF-8''4K%20NO%20G159.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRNM2hCVTFsa1JrMDNiWE5NV1c1eVFuTkdZbEpUT1VWNkJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSkxhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlORXNnVGs4Z1J6RTFPUzV3Ym1jaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkp6UkxKVEl3VGs4bE1qQkhNVFU1TG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRPSIsImV4cCI6IjIwMjAtMDgtMDVUMjE6NTY6MDYuNDc4WiIsInB1ciI6ImJsb2Jfa2V5In19--75852532bcdeb7c892a7f1bd72b94c16b950ecc1", "filename"=>"4K NO G159"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms)
+
+
+Completed 304 Not Modified in 3ms (ActiveRecord: 0.0ms)
+
+
+  [1m[36mRoom Load (0.3ms)[0m  [1m[34mSELECT "rooms".* FROM "rooms" INNER JOIN "user_rooms" ON "rooms"."id" = "user_rooms"."room_id" WHERE "user_rooms"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/channels/chat_channel.rb:7
+ChatChannel is transmitting the subscription confirmation
+ChatChannel is streaming from chat:1
+Started GET "/search_stock?utf8=%E2%9C%93&stock=guyiui&button=" for ::1 at 2020-08-06 00:53:13 +0300
+Processing by StocksController#search as JS
+  Parameters: {"utf8"=>"✓", "stock"=>"guyiui", "button"=>""}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendered layouts/_messages.html.erb (1.9ms)
+  Rendered layouts/_flash.html.erb (1.9ms)
+  Rendered stocks/_stock.html.erb (30.8ms)
+  Rendered stocks/_stock.js.erb (35.7ms)
+Completed 200 OK in 1787ms (Views: 115.0ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/tweets/3" for ::1 at 2020-08-06 00:53:23 +0300
+Processing by TweetsController#destroy as JS
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mTweet Load (0.6ms)[0m  [1m[34mSELECT  "tweets".* FROM "tweets" WHERE "tweets"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/tweets_controller.rb:44
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tweets_controller.rb:33
+  [1m[36mLike Load (0.3ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."tweet_id" = ?[0m  [["tweet_id", 3]]
+  ↳ app/controllers/tweets_controller.rb:33
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."tweet_id" = ?[0m  [["tweet_id", 3]]
+  ↳ app/controllers/tweets_controller.rb:33
+  [1m[36mTweet Destroy (3.2ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/tweets_controller.rb:33
+  [1m[35m (199.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tweets_controller.rb:33
+  Rendering tweets/destroy.js.erb
+  Rendered tweets/destroy.js.erb (1.8ms)
+Completed 200 OK in 277ms (Views: 47.1ms | ActiveRecord: 204.6ms)
+
+
+Started DELETE "/tweets/2" for ::1 at 2020-08-06 00:53:32 +0300
+Processing by TweetsController#destroy as JS
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT  "tweets".* FROM "tweets" WHERE "tweets"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tweets_controller.rb:44
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tweets_controller.rb:33
+  [1m[36mLike Load (0.1ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."tweet_id" = ?[0m  [["tweet_id", 2]]
+  ↳ app/controllers/tweets_controller.rb:33
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."tweet_id" = ?[0m  [["tweet_id", 2]]
+  ↳ app/controllers/tweets_controller.rb:33
+  [1m[36mTweet Destroy (0.4ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/tweets_controller.rb:33
+  [1m[35m (535.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tweets_controller.rb:33
+  Rendering tweets/destroy.js.erb
+  Rendered tweets/destroy.js.erb (2.1ms)
+Completed 200 OK in 579ms (Views: 21.4ms | ActiveRecord: 536.8ms)
+
+
+Started DELETE "/tweets/1" for ::1 at 2020-08-06 00:53:37 +0300
+Processing by TweetsController#destroy as JS
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/beka/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mTweet Load (0.2ms)[0m  [1m[34mSELECT  "tweets".* FROM "tweets" WHERE "tweets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tweets_controller.rb:44
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tweets_controller.rb:33
+  [1m[36mLike Load (0.1ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."tweet_id" = ?[0m  [["tweet_id", 1]]
+  ↳ app/controllers/tweets_controller.rb:33
+  [1m[36mLike Destroy (2.2ms)[0m  [1m[31mDELETE FROM "likes" WHERE "likes"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/tweets_controller.rb:33
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."tweet_id" = ?[0m  [["tweet_id", 1]]
+  ↳ app/controllers/tweets_controller.rb:33
+  [1m[36mTweet Destroy (1.8ms)[0m  [1m[31mDELETE FROM "tweets" WHERE "tweets"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/tweets_controller.rb:33
+  [1m[35m (168.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tweets_controller.rb:33
+  Rendering tweets/destroy.js.erb
+  Rendered tweets/destroy.js.erb (1.0ms)
+Completed 200 OK in 246ms (Views: 49.2ms | ActiveRecord: 172.9ms)
+
+
