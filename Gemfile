@@ -44,7 +44,7 @@ gem 'rubocop', '~> 0.82.0'
 gem 'sprockets-rails', '~> 3.2', '>= 3.2.1'
 gem 'toastr-rails'
 gem 'iex-ruby-client'
-gem 'aws-sdk-s3'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -64,6 +64,7 @@ group :development do
 end
 
 group :production do 
+  gem 'aws-sdk-s3', '~> 1'
   gem 'pg'
 end
 
